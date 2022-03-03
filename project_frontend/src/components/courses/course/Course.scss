@@ -1,0 +1,617 @@
+.course{
+    padding-bottom: 50px;
+    background-color: #f0eeee;
+    background-image: url('https://www.myndshft.com/wp-content/uploads/2019/06/compamy-top-dots-463x1024.png');
+}
+.courseLanding {
+    display: block;
+    box-sizing: border-box;
+    height: 500px;
+    clip-path: ellipse(99% 100% at 5.9% 0%);
+    }
+    .course .courseBackground{
+        height: 100%;
+        width: 100%;
+        filter: brightness(0.4);
+    }
+
+    .courseTitle{
+        position: absolute;
+        top:20%;
+        right: 15%;
+        font-size: 4vw;
+        font-weight: bold;
+        color: white;
+        /* background-color: rgba(48, 48, 48, 0.822); */
+        padding: 10px;
+        /* border: solid rgba(0, 0, 0, 0.116) 1px; */
+        border-radius: 10px;
+        /* box-shadow: rgba(75, 75, 75, 0.651) -10px 10px 10px; */
+        z-index: 1;
+
+    }
+    .courseContent{
+        background-color: #19ceee3d;
+        margin: 0px 100px;
+    }
+    .aboutImage{
+        width: 100%;
+    }
+    .deck {
+        position: relative;
+        max-width: 700px;
+        width: 100%;
+        margin: 5em auto 3em;
+      }
+      @media (max-width: 705px) {
+        .deck {
+          margin: 4em auto;
+        }
+      }
+      .deck:before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 95%;
+        top: -1.5em;
+        left: 0em;
+        border-radius: 8px;
+        background-image: radial-gradient(circle, #036b7f, #007f93, #0093a6, #00a8b9, #02bdcc);
+      }
+      @media (max-width: 550px) {
+        .deck:before {
+          left: 1.5em;
+        }
+      }
+      
+      .card {
+        position: relative;
+        background-color: #d4e6eecb;
+        padding: 1em;
+        z-index: 5;
+        border-radius: 2px;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+        transition: 200ms ease-in-out;
+      }
+      .card + .card {
+        margin-top: 1em;
+      }
+      .card:hover {
+        z-index: 7;
+        transform: scale(1.05);
+        box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+      }
+      .card:first-of-type {
+        margin-left: -3em;
+        margin-right: 3em;
+      }
+      @media (max-width: 705px) {
+        .card:first-of-type {
+          margin-left: -1em;
+          margin-right: 1em;
+        }
+      }
+      @media (max-width: 550px) {
+        .card:first-of-type {
+          margin: 0;
+        }
+      }
+      .card:nth-of-type(2) {
+        margin-left: 5em;
+        margin-right: -5em;
+        margin-top: -6em;
+      }
+      @media (max-width: 705px) {
+        .card:nth-of-type(2) {
+          margin-left: 1em;
+          margin-right: -1em;
+          margin-top: 1em;
+        }
+      }
+      @media (max-width: 550px) {
+        .card:nth-of-type(2) {
+          margin: 1em 0 0;
+        }
+      }
+      .card:nth-of-type(3) {
+        margin-top: -2em;
+        margin-left: -1em;
+        margin-right: 1em;
+      }
+      @media (max-width: 705px) {
+        .card:nth-of-type(3) {
+          margin-left: -1em;
+          margin-right: 1em;
+          margin-top: 1em;
+        }
+        .card:nth-of-type(3):after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -1em;
+          display: block;
+          border-bottom: 5px solid rgba(192, 57, 43, 0.6);
+        }
+      }
+      @media (max-width: 550px) {
+        .card:nth-of-type(3) {
+          margin: 1em 0 0;
+        }
+      }
+      
+      .cardHeader {
+        display: grid;
+        grid-template-columns: 36px auto 100px;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: #2365e8;
+      }
+      
+      .cardBody {
+        display: flex;
+        margin: 0 10px 10px;
+      }
+      .cardBody .cardText {
+        margin: 0 10px 0 0;
+        white-space: pre-line;
+        color: #000000;
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: larger;
+      }
+     
+      
+      svg {
+        position: absolute;
+        top: 0;
+        max-width: 90vw;
+        min-width: 500px;
+        max-height: 100vh;
+        min-height: 725px;
+        fill: rgba(192, 57, 43, 0.6);
+      }
+      @media (max-width: 705px) {
+        svg {
+          display: none;
+        }
+      }
+      svg path:nth-of-type(1) {
+        transform: scale(0.3) translateY(250px) translateX(15px);
+      }
+      svg path:nth-of-type(2) {
+        transform: scale(0.3) translateY(230px) translateX(10px);
+      }
+      svg path:nth-of-type(3) {
+        transform: scale(0.3) translateX(256px) translateY(39px);
+      }
+      svg path:nth-of-type(4) {
+        transform: scale(0.3) translateY(175px);
+      }
+      svg path:nth-of-type(5) {
+        transform: scale(0.3) translateX(267px) translateY(50px);
+      }
+      svg path:nth-of-type(6) {
+        transform: scale(0.3) translateY(170px) translateX(10px);
+      }
+      svg path:nth-of-type(7) {
+        transform: scale(0.3) translateY(150px);
+      }
+      svg path:nth-of-type(8) {
+        transform: scale(0.3) translateY(150px);
+      }
+      svg path:nth-of-type(9) {
+        transform: scale(0.3) translateX(230px) translateY(-34px);
+      }
+      svg path:nth-of-type(10) {
+        transform: scale(0.3) translateX(354px) translateY(-35px) rotateY(180deg) rotate(25deg);
+      }
+      svg path:nth-of-type(11) {
+        transform: scale(0.3) translateY(85px) translateX(-15px);
+      }
+      
+      .highlightHead{
+          background-image: url('https://media.istockphoto.com/videos/futuristic-abstract-background-cyan-loopable-technology-hologram-video-id487099658?s=640x640');
+
+          background-size: cover;
+          margin: 0px 100px;
+          padding: 100px 100px 200px 100px;
+          border-radius: 20px;
+          color: white;
+          font-size: 5vw;
+          text-align: center;
+          font-weight: bolder;
+      }
+      .courseHighlight {
+          padding: 40px ;
+          font-size: 2rem;
+          text-align: center;
+          font-weight: bolder;
+          color: #2365e8;
+        background-image: url('https://www.myndshft.com/wp-content/uploads/2019/06/compamy-top-dots-463x1024.png');
+        margin:-200px 120px;
+        border-radius: 20px;
+      }
+      .courseHighlight .highlightCard{
+          padding: 50px 2px;
+          box-shadow: #00000057 10px 10px 10px;
+          background-color: rgba(241, 245, 252, 0.938);
+          background-size: cover; 
+          border:20px solid rgba(210, 231, 248, 0.459);
+          border-radius: 10px;
+          transition:all .5s ease-in-out;
+      }
+      .courseHighlight .highlightCard:hover{
+          transform: scale(1.1);
+      }
+      .courseHighlight .highlightinfo{
+          font-size: 1.5rem;
+          color: #0c69c0;
+      }
+
+
+      .parallaxContent{
+          h1{
+              font-size: 50px;
+              font-weight: bold;
+          }
+          h2{
+              font-size: 40px;
+              font-weight: bold;
+          }
+          h3{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    h4{
+        font-size: 20;
+        font-weight: bold;
+    }
+    li{
+        list-style: inside;
+    }
+
+    .header {
+        box-sizing:border-box;-moz-box-sizing:border-box;
+        z-index:3;
+        position:sticky;
+        top:0;
+        width:100%;
+        background:#cecdcd;
+        color:#2365e8;
+        color:#000;
+        text-align:center;
+        -webkit-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+        box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+        border-bottom:3px solid #000;
+      }
+      .parallax {
+        position:relative;
+        z-index:1;
+        height:450px;
+        -webkit-box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
+      box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
+      }
+      
+      .trans1 {
+        background: url('https://th.bing.com/th/id/OIP.hY79sSvE9y-7lmp8tv3XnQHaE7?pid=ImgDet&rs=1') no-repeat fixed;
+        height:575px;
+        background-position: center top;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      
+      .trans2 {
+        background: url('https://th.bing.com/th/id/R.5826d8bc97f54053b1f7e641cd4231a5?rik=wn4kXs%2bKeeVK0g&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fd%2ff%2f7%2f12588.jpg&ehk=tTfwK7zH20m0oJGX5yQUssxAmfKaL82%2bwpyxobOZKQY%3d&risl=&pid=ImgRaw&r=0') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      
+      .trans3 {
+        background: url('https://www.sbm.com.sa/sites/default/files/images/shutterstock_360072566.jpg') no-repeat top center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height:750px;
+      }
+      
+      .txt {
+        font-family: 'Niconne', cursive;
+        font-size:55px;
+        color:#000;
+        width:auto;
+        background:rgba(102, 181, 255, 0.6);
+        padding:5px 10px;
+      }
+      .txt.right {
+        margin: 150px 100px 0 0;
+        float:right;
+        text-align:right;
+      }
+      .txt.left {
+        float:left;
+        text-align:left;
+        margin: 150px 0 0 100px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      
+      .txt.sub {
+        font-size:50px;
+        line-height:175%;
+        font-weight:lighter;
+        letter-spacing:1.5px;
+        background:#000;
+        background:rgba(0,0,0,0.60);
+        font-size:25px;
+        color:rgb(255, 255, 255);
+        margin: 0 100px 0 100px;
+      }
+      .content {
+        box-sizing:border-box;-moz-box-sizing:border-box;
+        position:relative;
+        z-index:2;
+        background-image: radial-gradient(circle, #036b7f, #007f93, #0093a6, #00a8b9, #02bdcc);
+        width:100%;
+      
+        margin:0;
+        padding:10px 20px;
+        -webkit-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+        box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+        text-align:left;
+      }
+      
+      .content.right {
+        text-align:right;
+      }
+      
+      .content h2 { padding:0 25px; }
+      .content p { padding:0 50px; }
+      }
+
+      .coursePurchase{
+            display: grid;
+            grid-template-rows: 1fr;
+            font-family: "Raleway", sans-serif;
+            background-color: #19ceee3d;
+        margin: 50px 100px;
+        padding: 50px 0px;
+        border-radius: 10px;
+        
+          
+          h3 {
+            font-size: 0.7em;
+            letter-spacing: 1.2px;
+            color: #a6a6a6;
+
+          }
+          
+          img {
+            max-width: 100%;
+            filter: drop-shadow(1px 1px 3px #a6a6a6);
+          }
+          
+          /* ----- Product Section ----- */
+          .product {
+            display: grid;
+            grid-template-columns: 0.9fr 1fr;
+            margin: auto;
+            padding: 2.5em 0;
+            min-width: none;
+            background-color: white;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+          }
+          .product:hover{
+              transform: scale(1.1);
+              box-shadow: rgba(0, 0, 0, 0.171) 10px 10px 10px;
+          }
+          
+          /* ----- Photo Section ----- */
+          .product__photo {
+            position: relative;
+          }
+          
+          .photo-container {
+            position: absolute;
+            left: -2.5em;
+            display: grid;
+            grid-template-rows: 1fr;
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+            box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
+          }
+          
+          .photo-main {
+            border-radius: 6px 6px 0 0;
+            background-image: radial-gradient(circle, #036b7f, #007f93, #0093a6, #00a8b9, #02bdcc);
+          }
+          .photo-main .controls {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.8em;
+            color: #fff;
+          }
+          .photo-main .controls i {
+            cursor: pointer;
+          }
+          .photo-main img {
+            position: absolute;
+            left: -3.5em;
+            top: 2em;
+            max-width: 110%;
+            filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+          }
+          
+          .photo-album {
+            padding: 0.7em 1em;
+            border-radius: 0 0 6px 6px;
+            background-color: #fff;
+          }
+          .photo-album ul {
+            display: flex;
+            justify-content: space-around;
+          }
+          .photo-album li {
+            float: left;
+            width: 55px;
+            height: 55px;
+            padding: 7px;
+            border: 1px solid #a6a6a6;
+            border-radius: 3px;
+          }
+          
+          /* ----- Informations Section ----- */
+          .product__info {
+            padding: 0.8em 0;
+          }
+          
+          .title h1 {
+            margin-bottom: 0.1em;
+            color: #4c4c4c;
+            font-size: 1.5em;
+            font-weight: 900;
+            width: 30vw;
+          }
+          .title span {
+            font-size: 0.7em;
+            color: #a6a6a6;
+          }
+          
+          .price {
+            margin: 1.5em 0;
+            color: #0c69c0;
+            font-size: 1.2em;
+          }
+          .price span {
+            padding-left: 0.15em;
+            font-size: 2.9em;
+          }
+          
+          
+          
+          .description {
+            clear: left;
+            margin: 2em 0;
+            width: 30vw;
+          }
+          .description ul{
+              color: #e04c41;
+              list-style: inside;
+              padding: 30px 0px;
+          }
+          
+      }
+
+      .courseBrochure{
+          background-image: url('https://www.myndshft.com/wp-content/uploads/2019/06/compamy-top-dots-463x1024.png');
+          padding: 50px 100px;
+          position: relative;
+          text-align: center;
+          h1{
+              font-size: 30px;
+              font-weight: bold;
+          }
+          h3{
+              font-size: 20px;
+              font-weight: bold;
+          }
+          .wrapper{
+              background-color: rgba(0, 0, 0, 0.397);
+              padding: 50px 50px 100px 50px;
+              border-radius: 10px;
+              color:#e2f5f8;
+              box-shadow: rgba(0, 0, 0, 0.274) 10px 10px 10px;
+          }
+          form{
+              border-radius: 10px;
+              background-color: #eaeffa;
+              margin: -70px 100px;
+              padding:100px 100px;
+              text-align: start;
+              color: #007f93;
+              font-weight: 500;
+              box-shadow: rgba(0, 0, 0, 0.274) 10px 10px 10px;
+          }
+          label{
+              font-size: 20px;
+          }
+
+          input{
+              width: 100%;
+              border-radius: 10px;
+              padding: 10px 20px;
+              background-color: rgba(184, 184, 184, 0.247);
+          }
+          input[type=radio]{
+              height:2rem;
+          }
+          button{
+              margin: 60px 0px;
+              padding: 20px 20px;
+              background-color: #007f9393;
+              border-radius: 10px;
+              box-shadow: rgba(0, 0, 0, 0.185) 10px 10px 10px;
+              color: white;
+              font-weight: bold;
+          }
+          button:hover{
+              background-color: #007f93;
+              transform: scale(1.1);
+          }
+
+      }
+
+      .courseTestimonial{
+        padding: 5vh 15vw;
+        background-image: url('https://th.bing.com/th/id/R.caf21af0a02ef28352d9088e13b3d9fb?rik=9hJCHZ6uXTurjA&riu=http%3a%2f%2ffreelanceratindore.com%2fwp-content%2fuploads%2f2017%2f11%2fTestimonials-Background.jpg&ehk=3UWCpaSGdqHcARI91peCCGC7VkXf3bUBPW8lw4pQVGA%3d&risl=&pid=ImgRaw&r=0');
+      }
+      
+
+      @media(max-width:1200px){
+        .highlightHead{
+          padding: 100px 10px 200px 10px;
+          margin: 0px 50px;
+        }
+        .courseHighlight{
+            margin:-200px 50px;
+        }
+        .parallaxContent{
+            .trans3{
+                height: 1300px;
+            }
+        }
+        
+    }
+    @media(max-width:768px){
+        .coursePurchase{
+            margin: 10px;
+            .product{
+                padding-left: 10vw;
+                padding-right: 5vw;
+                
+            }
+            .description{
+                padding: 0px;
+                margin: 0px;
+                width: fit-content;
+            }
+        }
+        .courseBrochure{
+            padding: 10px 10px;
+            form{
+                margin-left: 0px;
+                margin-right: 0px;
+                padding: 20px 20px;
+            }
+        }
+    }
