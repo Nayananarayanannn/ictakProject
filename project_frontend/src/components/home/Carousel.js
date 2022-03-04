@@ -28,25 +28,25 @@ const Carousel = () => {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner relative w-full overflow-hidden">
-          <div className="carousel-item active relative float-left w-full">
+          <div className="carousel-item active relative float-left w-full h-[70vh]">
             <img
-              src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+              src="http://ictacademyofficial.herokuapp.com/assets/material/img/ictaku.png"
               className="block w-full"
               alt="Wild Landscape"
             />
           </div>
-          <div className="carousel-item relative float-left w-full">
+          <div className="carousel-item relative float-left w-full h-[70vh]">
             <img
-              src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+              src="https://scontent.fcok14-1.fna.fbcdn.net/v/t1.6435-9/56587564_2705108422848955_4526248574765236224_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=dsNctgsuHXAAX-I6rOD&_nc_ht=scontent.fcok14-1.fna&oh=00_AT8h-mZ1uqfS38C3vajJz_jVKihtG0pkAcpPvw73ULRhfg&oe=6248D40B"
               className="block w-full"
               alt="Camera"
             />
           </div>
-          <div className="carousel-item relative float-left w-full">
+          <div className="carousel-item relative float-left w-full h-[70vh]">
             <img
-              src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+              src="https://scontent.fcok14-1.fna.fbcdn.net/v/t1.6435-9/67704105_2941606415865820_3038612073983508480_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=GcH-mI1UGFwAX9JWq3V&_nc_ht=scontent.fcok14-1.fna&oh=00_AT-VNR-2oaHtLGCojVWh4ljA5xIBna9clD-HY1zrLWYI0A&oe=62476498"
               className="block w-full"
-              alt="Exotic Fruits"
+              alt="grp image"
             />
           </div>
         </div>
