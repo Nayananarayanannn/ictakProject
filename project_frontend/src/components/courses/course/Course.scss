@@ -163,53 +163,53 @@
       }
      
       
-      svg {
-        position: absolute;
-        top: 0;
-        max-width: 90vw;
-        min-width: 500px;
-        max-height: 100vh;
-        min-height: 725px;
-        fill: rgba(192, 57, 43, 0.6);
-      }
-      @media (max-width: 705px) {
-        svg {
-          display: none;
-        }
-      }
-      svg path:nth-of-type(1) {
-        transform: scale(0.3) translateY(250px) translateX(15px);
-      }
-      svg path:nth-of-type(2) {
-        transform: scale(0.3) translateY(230px) translateX(10px);
-      }
-      svg path:nth-of-type(3) {
-        transform: scale(0.3) translateX(256px) translateY(39px);
-      }
-      svg path:nth-of-type(4) {
-        transform: scale(0.3) translateY(175px);
-      }
-      svg path:nth-of-type(5) {
-        transform: scale(0.3) translateX(267px) translateY(50px);
-      }
-      svg path:nth-of-type(6) {
-        transform: scale(0.3) translateY(170px) translateX(10px);
-      }
-      svg path:nth-of-type(7) {
-        transform: scale(0.3) translateY(150px);
-      }
-      svg path:nth-of-type(8) {
-        transform: scale(0.3) translateY(150px);
-      }
-      svg path:nth-of-type(9) {
-        transform: scale(0.3) translateX(230px) translateY(-34px);
-      }
-      svg path:nth-of-type(10) {
-        transform: scale(0.3) translateX(354px) translateY(-35px) rotateY(180deg) rotate(25deg);
-      }
-      svg path:nth-of-type(11) {
-        transform: scale(0.3) translateY(85px) translateX(-15px);
-      }
+//       svg {
+//         position: absolute;
+//         top: 0;
+//         max-width: 90vw;
+//         min-width: 500px;
+//         max-height: 100vh;
+//         min-height: 725px;
+//         fill: rgba(192, 57, 43, 0.6);
+//       }
+//       @media (max-width: 705px) {
+//         svg {
+//           display: none;
+//         }
+//       }
+//       svg path:nth-of-type(1) {
+//         transform: scale(0.3) translateY(250px) translateX(15px);
+//       }
+//       svg path:nth-of-type(2) {
+//         transform: scale(0.3) translateY(230px) translateX(10px);
+//       }
+//       svg path:nth-of-type(3) {
+//         transform: scale(0.3) translateX(256px) translateY(39px);
+//       }
+//       svg path:nth-of-type(4) {
+//         transform: scale(0.3) translateY(175px);
+//       }
+//       svg path:nth-of-type(5) {
+//         transform: scale(0.3) translateX(267px) translateY(50px);
+//       }
+//       svg path:nth-of-type(6) {
+//         transform: scale(0.3) translateY(170px) translateX(10px);
+//       }
+//       svg path:nth-of-type(7) {
+//         transform: scale(0.3) translateY(150px);
+//       }
+//       svg path:nth-of-type(8) {
+//         transform: scale(0.3) translateY(150px);
+//       }
+//       svg path:nth-of-type(9) {
+//         transform: scale(0.3) translateX(230px) translateY(-34px);
+//       }
+//       svg path:nth-of-type(10) {
+//         transform: scale(0.3) translateX(354px) translateY(-35px) rotateY(180deg) rotate(25deg);
+//       }
+//       svg path:nth-of-type(11) {
+//         transform: scale(0.3) translateY(85px) translateX(-15px);
+//       }
       
       .highlightHead{
           background-image: url('https://media.istockphoto.com/videos/futuristic-abstract-background-cyan-loopable-technology-hologram-video-id487099658?s=640x640');
