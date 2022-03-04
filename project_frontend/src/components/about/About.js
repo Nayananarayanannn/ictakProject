@@ -7,11 +7,11 @@ import BottomSection from './BottomSection';
 
 function About() {
     return (
-      <>
+      <div className='overflow-hidden'>
         <TopSection/>
         <Middle1 />
         <BottomSection />
-       </>
+       </div>
     );
 }
 
