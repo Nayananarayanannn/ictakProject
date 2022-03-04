@@ -22,7 +22,7 @@ function App() {
           <Route path='/courses' element = {<Courses/>}/>
           <Route path='/course/:id' element = {<Course/>}/>
         </Routes>
-        {/* <Footer /> */}
+        {<Footer />}
       </>
     </Router>
   );
