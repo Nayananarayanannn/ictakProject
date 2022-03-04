@@ -191,10 +191,7 @@ const Footer = () => {
 
         <div className="mb-6">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            distinctio earum repellat quaerat voluptatibus placeat nam, commodi
-            optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-            sequi voluptate quas.
+            They say with a new workplace, comes new energy, new excitement & most of all, a greater responsibility. Indeed, that is true. 
           </p>
         </div>
 
