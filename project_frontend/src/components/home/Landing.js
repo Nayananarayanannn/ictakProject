@@ -31,7 +31,7 @@ export default function Landing() {
                 <img
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                  src="http://ictacademyofficial.herokuapp.com/assets/material/img/icthall.png"
                 />
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -39,13 +39,13 @@ export default function Landing() {
                   <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
                     <i className="fas fa-rocket text-xl"></i>
                   </div>
-                  <h3 className="text-3xl font-semibold">A growing company</h3>
+                  <h3 className="text-3xl font-semibold">Every Moment is a Fresh Beginning !</h3>
                   <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                    The extension comes with three pre-built pages to help you
-                    get started faster. You can change the text and images and
-                    you're good to go.
+                  ICT Academy was officially inaugurated by Chief Minister of Kerala Mr. Oommen Chandy on 24 June 2014 at a function held in Thiruvananthapuram in the presence of Education Minister P.K. Abdu Rabb, Additional Chief Secretary V. Somasundaram, and Higher Education Principal Secretary K.M. Abraham.
+<br/><br/>
+The Chief Minister also released the logo of the ICT Academy and Education Minister P.K. Abdu Rabb launched the academy’s website and learning management system called ‘Paatshala’.
                   </p>
-                  <ul className="list-none mt-6">
+                  {/* <ul className="list-none mt-6">
                     <li className="py-2">
                       <div className="flex items-center">
                         <div>
@@ -86,7 +86,7 @@ export default function Landing() {
                         </div>
                       </div>
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             </div>
@@ -97,11 +97,9 @@ export default function Landing() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">Here are our heroes</h2>
+                <h2 className="text-4xl font-semibold">Here are our students</h2>
                 <p className="text-lg leading-relaxed m-4 text-gray-600">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record maximum.
+                Check Out what our Students has to say about the Courses and how they have benefitted ! Don't Miss the opportunity !
                 </p>
               </div>
             </div>
@@ -110,15 +108,16 @@ export default function Landing() {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("../../assets/img/team-1-800x800.jpg").default}
+                    src="http://ictacademyofficial.herokuapp.com/uploads/file1-1641929766438.jpeg"
                     className="shadow-lg rounded-full max-w-full mx-auto"
                     style={{ maxWidth: "120px" }}
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Ryan Tompson</h5>
+                    <h5 className="text-xl font-bold">Jewel Moncy John</h5>
                     <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Web Developer
+                      Front End Developer
                     </p>
+                    <h6>@Ernst & Young</h6>
                     <div className="mt-6">
                       <button
                         className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
@@ -146,15 +145,16 @@ export default function Landing() {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("../../assets/img/team-2-800x800.jpg").default}
+                    src="http://ictacademyofficial.herokuapp.com/uploads/file1-1641929778788.jpeg"
                     className="shadow-lg rounded-full max-w-full mx-auto"
                     style={{ maxWidth: "120px" }}
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Romina Hadid</h5>
+                    <h5 className="text-xl font-bold">Theertha Anil K</h5>
                     <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Marketing Specialist
+                      Data Scientist
                     </p>
+                    <h6>@Edstem Technologies</h6>
                     <div className="mt-6">
                       <button
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
@@ -176,15 +176,16 @@ export default function Landing() {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("../../assets/img/team-3-800x800.jpg").default}
+                    src="http://ictacademyofficial.herokuapp.com/uploads/file1-1641929791347.jpeg"
                     className="shadow-lg rounded-full max-w-full mx-auto"
                     style={{ maxWidth: "120px" }}
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Alexa Smith</h5>
+                    <h5 className="text-xl font-bold">Nihad Hassan</h5>
                     <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      UI/UX Designer
+                      Data Analystics
                     </p>
+                    <h6>@TCS</h6>
                     <div className="mt-6">
                       <button
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
@@ -217,10 +218,11 @@ export default function Landing() {
                     style={{ maxWidth: "120px" }}
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Jenna Kardi</h5>
+                    <h5 className="text-xl font-bold">Cyril John Varghese</h5>
                     <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Founder and CEO
+                      Data Scientist
                     </p>
+                    <h6>@Eynetech services</h6>
                     <div className="mt-6">
                       <button
                         className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
@@ -279,12 +281,10 @@ export default function Landing() {
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-4xl font-semibold text-white">
-                  Build something
+                  INDUSTRY CONNECTS
                 </h2>
                 <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-                  Put the potentially record low maximum sea ice extent tihs
-                  year down to low ice. According to the National Oceanic and
-                  Atmospheric Administration, Ted, Scambos.
+                We conduct various programs which leverages the link between industry and academia. These interactions not only limits to students, but also extends to faculties too. The institute can encourage their faculties, scientists, technicians and students to interact with industry in all possible ways with the spirit of deriving mutual benefits. This increases understanding between the Institute and industries to bring the two sides emotionally and strategically closer.
                 </p>
               </div>
             </div>
@@ -294,11 +294,10 @@ export default function Landing() {
                   <i className="fas fa-medal text-xl"></i>
                 </div>
                 <h6 className="text-xl mt-5 font-semibold text-white">
-                  Excelent Services
+                  Teachers Top-5
                 </h6>
                 <p className="mt-2 mb-4 text-gray-500">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                Top 5 event is one of the hallmark events of ICT Academy of Kerala, targeted to Faculty members of the colleges. This event will be conducted in three different zones of Kerala namely, South, Central and North. Five faculty members from each college will be invited to a respective zone, where they will interact with the industry experts and doyens in the filed of Engineering & Technology.
                 </p>
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
@@ -306,11 +305,10 @@ export default function Landing() {
                   <i className="fas fa-poll text-xl"></i>
                 </div>
                 <h5 className="text-xl mt-5 font-semibold text-white">
-                  Grow your market
+                  Students Top-10
                 </h5>
                 <p className="mt-2 mb-4 text-gray-500">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                This is another flagship event of ICTAK, which is engrossed for student community of the colleges in the state of Kerala. This event will be conducted in three different zones of Kerala namely, South, Central and North. For this event 10 students from each college (called as student champs) will be invited to a respective zone and will be given a chance to interact with industry leaders and experts from various domains. 
                 </p>
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
@@ -318,11 +316,21 @@ export default function Landing() {
                   <i className="fas fa-lightbulb text-xl"></i>
                 </div>
                 <h5 className="text-xl mt-5 font-semibold text-white">
-                  Launch time
+                ICTAK TECHATHLON
                 </h5>
                 <p className="mt-2 mb-4 text-gray-500">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                ICTAK Techathlon is a National Level Technical Fest organized by ICT Academy of Kerala every year. Techathlon is a unique technical contest designed in line with employability skills assessments conducted by Global Organizations. This is an event open to all the undergraduate, graduate and post graduate students across the country where the participants can exhibit and depict their creativity, problem solving, collaboration, communication and prototyping skills
+                </p>
+              </div>
+              <div className="w-full lg:w-3/12 px-4 text-center">
+                <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                  <i className="fas fa-lightbulb text-xl"></i>
+                </div>
+                <h5 className="text-xl mt-5 font-semibold text-white">
+                ICSET
+                </h5>
+                <p className="mt-2 mb-4 text-gray-500">
+                The fifth edition of ICT Academy of Kerala’s International Conclave on Skills, Engineering & Technology (ICSET) is aimed at bringing closer the academia, industry, government and connected stakeholders at large, to discuss, deliberate and exchange ideas about skills, engineering and technology areas. This year's main theme is 'Leading the New Normal'.
                 </p>
               </div>
             </div>
