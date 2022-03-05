@@ -7,6 +7,7 @@ import LoginPage from "./pages/LoginPage";
 import About from "./components/about/About";
 import Courses from './components/courses/Courses';
 import Course from  './components/courses/course/Course';
+import EventsTable from "./components/eventstale/EventsTable";
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about-us" element={<About />} />
           <Route path='/courses' element = {<Courses/>}/>
           <Route path='/course/:id' element = {<Course/>}/>
+          <Route path='/events' element = {<EventsTable/>}/>
         </Routes>
         {<Footer />}
       </>
