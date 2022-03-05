@@ -1,12 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
+var axios = require("axios");
+var qs = require("qs");
 
 function Brochure({ course }) {
-	
+  const [formValue, setFormValue] = useState({
+    name: "",
+    phone: "",
+    mail: "",
+    degree: "",
+  });
+
   // handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("form submitted successfully");
+    mailBrochure();
+    alert(`${course.url}`);
   };
+
+  // manage form change
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormValue({ ...formValue, [name]: value });
+  };
+
+  // post form data to get brochure in mail
+  function mailBrochure() {
+    var data = qs.stringify({
+      mail: formValue.mail,
+    });
+    var config = {
+      method: "post",
+      url: `http://localhost:8000/api/courses/${course.url}/mailer`,
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      data: data,
+    };
+
+    axios(config)
+      .then(function (response) {
+        console.log(JSON.stringify(response.data));
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
 
   return (
     <div>
@@ -18,25 +56,50 @@ function Brochure({ course }) {
         <form onSubmit={handleSubmit}>
           <label>Name</label>
           <br />
-          <input type="text" name="name" required />
+          <input
+            type="text"
+            onChange={handleChange}
+            value={formValue.name}
+            name="name"
+            required
+          />
           <br />
           <label>Phone</label>
           <br />
-          <input type="tel" name="phone" required />
+          <input
+            type="tel"
+            onChange={handleChange}
+            value={formValue.phone}
+            name="phone"
+            required
+          />
           <br />
           <label>Email</label>
           <br />
-          <input type="email" name="mail" required />
+          <input
+            type="email"
+            onChange={handleChange}
+            value={formValue.mail}
+            name="mail"
+            required
+          />
           <br />
           <label>Are you employed?</label>
           <br />
-          Yes :<input type="radio" name="employed" />
+          Yes :
+          <input type="radio" name="employed" />
           <br />
-          NO :<input type="radio" name="employed" />
+          NO :
+          <input type="radio" name="employed" />
           <br />
           <label>Highest Graduation</label>
           <br />
-          <input type="text" name="degree" />
+          <input
+            type="text"
+            onChange={handleChange}
+            value={formValue.degree}
+            name="degree"
+          />
           <br />
           <button type="submit">SEND BROCHURE</button>
         </form>

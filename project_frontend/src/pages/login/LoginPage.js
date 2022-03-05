@@ -22,7 +22,6 @@ const LoginPage = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
     setInputs({ ...inputs, [name]: value });
-    console.log(inputs);
   };
 
   //Manage Form Submit

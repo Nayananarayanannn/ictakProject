@@ -1,11 +1,12 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const courseRouter = require("./routes/courseRouter");
+const courseRouter = require("./routes/course/courseRouter");
 
 const app = express();
 
 app.use(express.json());
+app.use(express.urlencoded({ extended:true }))
 app.use(cors()); //set cors
 
 // cors headers
