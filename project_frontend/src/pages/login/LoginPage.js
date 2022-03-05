@@ -83,7 +83,6 @@ const LoginPage = () => {
                             placeholder="Username"
                             value={inputs.email}
                             onChange={handleChange}
-                            required
                           />
                           <p className="text-[#98141D] font-semibold  flex justify-center h-2">
                             {errors.email}
@@ -98,7 +97,6 @@ const LoginPage = () => {
                             placeholder="Password"
                             value={inputs.password}
                             onChange={handleChange}
-                            required
                           />
                           <p className="text-[#98141D] font-semibold flex justify-center h-2">
                             {errors.password}
