@@ -56,7 +56,7 @@ const NavBar = () => {
         <a href="https://retail.ictkerala.org" target="_blank" className={style.headerItem} rel="noreferrer">
           Paatshala
         </a>
-        <Link to="/News" className={style.headerItem}>
+        <Link to="/news" className={style.headerItem}>
           News
         </Link>
         <a href="https://ictkerala.zohorecruit.com/jobs/Careers" target="_blank" className={style.headerItem} rel="noreferrer">
