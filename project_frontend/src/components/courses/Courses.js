@@ -36,7 +36,7 @@ function Courses(props) {
   },[])
 
   return (
-    <div className='grid lg:grid-cols-2 md:grid-cols-1 gap-2 m-1'>
+    <div className='bg-gray-300 grid lg:grid-cols-2 md:grid-cols-1 gap-2 m-1'>
       {CourseLists.map((course, index) => (
         <>
           <div data-aos={index%2 === 0? 'fade-right' : "fade-left"}

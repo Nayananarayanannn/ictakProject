@@ -5,7 +5,7 @@ function Partners({course}) {
         <div>
              <div
                   className="flex items-center justify-center h-screen;"
-                  style={{ backgroundColor: "#19ceee3d", margin: "0px 100px" }}
+                  style={{ backgroundColor: "#19ceee3d", margin: "0px 100px", paddingBottom:"50px" }}
                 >
                   <div
                     className=" rounded-lg shadow-xl p-8"
@@ -14,6 +14,7 @@ function Partners({course}) {
                         "radial-gradient(circle, #036b7f, #007f93, #0093a6, #00a8b9, #02bdcc)",
                       opacity: "0.8",
                       marginTop: "110px",
+                      boxShadow:"rgba(0, 0, 0, 0.151) 10px 10px 10px"
                     }}
                   >
                     <div className="grid sm:grid-cols-2 xs:grid-cols-1 gap-4">
