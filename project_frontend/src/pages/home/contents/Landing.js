@@ -213,7 +213,7 @@ The Chief Minister also released the logo of the ICT Academy and Education Minis
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("../../assets/img/team-4-470x470.png").default}
+                    src={require("../../../assets/img/team-4-470x470.png").default}
                     className="shadow-lg rounded-full max-w-full mx-auto"
                     style={{ maxWidth: "120px" }}
                   />

@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react';
 import Aos from 'aos';
 import "aos/dist/aos.css";
-import video from './video.mp4';
+import video from '../../../assets/video/video.mp4';
 
 function Middle1() {
     useEffect(() => {

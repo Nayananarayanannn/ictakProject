@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { loginValidation } from "../validation";
+import { loginValidation } from "./validation";
 
 const style = {
   wrapper: `relative`,
@@ -25,7 +25,6 @@ const LoginPage = () => {
     console.log(inputs);
   };
 
-
   //Manage Form Submit
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -34,11 +33,14 @@ const LoginPage = () => {
   };
 
   //Successful Signup validation
-  useEffect((event) => {
-    if (Object.keys(errors).length === 0 && isSubmit) {
-      alert("Login Successful");
-    }
-  }, [errors, isSubmit]);
+  useEffect(
+    (event) => {
+      if (Object.keys(errors).length === 0 && isSubmit) {
+        alert("Login Successful");
+      }
+    },
+    [errors, isSubmit]
+  );
 
   return (
     <div className={style.wrapper}>
@@ -81,7 +83,8 @@ const LoginPage = () => {
                             placeholder="Username"
                             value={inputs.email}
                             onChange={handleChange}
-                          required/>
+                            required
+                          />
                           <p className="text-[#98141D] font-semibold  flex justify-center h-2">
                             {errors.email}
                           </p>
@@ -95,7 +98,8 @@ const LoginPage = () => {
                             placeholder="Password"
                             value={inputs.password}
                             onChange={handleChange}
-                          required/>
+                            required
+                          />
                           <p className="text-[#98141D] font-semibold flex justify-center h-2">
                             {errors.password}
                           </p>

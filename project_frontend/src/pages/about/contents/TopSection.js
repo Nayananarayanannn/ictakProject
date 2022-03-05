@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react';
 import Aos from 'aos';
 import "aos/dist/aos.css";
-import video from './Lines - 5224.mp4';
+import video from '../../../assets/video/Lines - 5224.mp4';
 
 function TopSection() {
     useEffect(() => {
