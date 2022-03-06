@@ -16,7 +16,8 @@ function Partnership(props) {
         >
           <h1>Our Training Service Provider</h1>
         </div>
-        <img className="mx-auto" src="https://i1.wp.com/ictkerala.org/wp-content/uploads/2020/05/Img.jpg?w=1080&ssl=1" alt="partnership"/>
+        <img data-aos="fade-in"
+          data-aos-duration="1000" className="mx-auto" src="https://i1.wp.com/ictkerala.org/wp-content/uploads/2020/05/Img.jpg?w=1080&ssl=1" alt="partnership"/>
         
       </div>
       <section className=" relative py-20 bg-blue-300">

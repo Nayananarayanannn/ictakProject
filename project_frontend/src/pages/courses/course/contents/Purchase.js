@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Purchase({ course, style }) {
   return (
@@ -47,9 +48,11 @@ function Purchase({ course, style }) {
               </ul>
             </div>
             {course.status === "open" ? (
-              <button type="button" className={style.open}>
-                APPLY NOW
-              </button>
+              <Link to={`/course/${course.url}/apply`} state={{ course }}>
+                <button type="button" className={style.open}>
+                  APPLY NOW
+                </button>
+              </Link>
             ) : (
               <button className={style.close}>Registration closed</button>
             )}
