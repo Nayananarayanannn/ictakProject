@@ -36,45 +36,56 @@ function Courses(props) {
   }, []);
 
   return (
-    <div className="bg-gray-300 grid lg:grid-cols-2 md:grid-cols-1 gap-2 m-1">
-      {CourseLists.map((course, index) => (
-        <>
-          <div
-            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-            data-aos-duration="1000"
-            className={index % 2 === 0 ? "blog-card" : "blog-card alt"}
-          >
-            <div className="meta">
-              <div className="photo">
-                <img
-                  src={process.env.PUBLIC_URL + `/courseImages/${course.image}`}
-                  alt={course.name}
-                />{" "}
+    <div className="coursesList bg-gray-300">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        className="courseListHead block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14 bg-[#FFFFFFA8] backdrop-blur-sm"
+      >
+        <h1>Our Courses</h1>
+      </div>
+      <div className=" grid lg:grid-cols-2 md:grid-cols-1 gap-2">
+        {CourseLists.map((course, index) => (
+          <>
+            <div
+              data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+              data-aos-duration="1000"
+              className={index % 2 === 0 ? "blog-card" : "blog-card alt"}
+            >
+              <div className="meta">
+                <div className="photo">
+                  <img
+                    src={
+                      process.env.PUBLIC_URL + `/courseImages/${course.image}`
+                    }
+                    alt={course.name}
+                  />{" "}
+                </div>
+                <div className="details">
+                  <h1> {course.name} </h1>
+                  {/* apply button sctive or inactive based on registration status */}
+                  {console.log(course.status)}
+                  {course.status === "open" ? (
+                    <button type="button" className={style.open}>
+                      APPLY NOW
+                    </button>
+                  ) : (
+                    <button className={style.close}>Registration closed</button>
+                  )}
+                </div>
               </div>
-              <div className="details">
-                <h1> {course.name} </h1>
-                {/* apply button sctive or inactive based on registration status */}
-                {console.log(course.status)}
-                {course.status === "open" ? (
-                  <button type="button" className={style.open}>
-                    APPLY NOW
-                  </button>
-                ) : (
-                  <button className={style.close}>Registration closed</button>
-                )}
+              <div className="description">
+                <h1>{course.title}</h1>
+                <h2>{course.quote}</h2>
+                <p>{course.shortDescription}</p>
+                <p className="read-more">
+                  <Link to={`/course/${course.url}`}>Read More</Link>
+                </p>
               </div>
             </div>
-            <div className="description">
-              <h1>{course.title}</h1>
-              <h2>{course.quote}</h2>
-              <p>{course.shortDescription}</p>
-              <p className="read-more">
-                <Link to={`/course/${course.url}`}>Read More</Link>
-              </p>
-            </div>
-          </div>
-        </>
-      ))}
+          </>
+        ))}
+      </div>
     </div>
   );
 }

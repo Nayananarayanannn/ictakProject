@@ -60,7 +60,7 @@ function Course(props) {
           />
         </div>
 
-        <div className="courseTitle">
+        <div className="courseTitle ml-3">
           <h1 data-aos="zoom-in" data-aos-duration="1500">
             {course.title}
           </h1>
