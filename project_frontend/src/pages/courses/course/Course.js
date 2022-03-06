@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Course.scss";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -65,9 +65,11 @@ function Course(props) {
             {course.title}
           </h1>
           {course.status === "open" ? (
-            <button type="button" className={style.open}>
-              APPLY NOW
-            </button>
+            <Link to={`/course/${course.url}/apply`} state={{ course }}>
+              <button type="button" className={style.open}>
+                APPLY NOW
+              </button>
+            </Link>
           ) : (
             <button className={style.close}>Registration closed</button>
           )}

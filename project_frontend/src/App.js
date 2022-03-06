@@ -8,6 +8,7 @@ import About from "./pages/about/About";
 import Courses from './pages/courses/Courses';
 import Course from  './pages/courses/course/Course';
 import News from "./pages/news/News";
+import RegisterCourse from "./pages/courses/course/contents/RegisterCourse";
 
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/about-us" element={<About />} />
           <Route path='/courses' element = {<Courses/>}/>
           <Route path='/course/:id' element = {<Course/>}/>
+          <Route path='/course/:id/apply' element = {<RegisterCourse/>}/>
           <Route path='/news' element = {<News/>}/>
         </Routes>
 

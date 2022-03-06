@@ -66,9 +66,11 @@ function Courses(props) {
                   {/* apply button sctive or inactive based on registration status */}
                   {console.log(course.status)}
                   {course.status === "open" ? (
-                    <button type="button" className={style.open}>
-                      APPLY NOW
-                    </button>
+                    <Link to={`/course/${course.url}/apply`} state={{ course }}>
+                      <button type="button" className={style.open}>
+                        APPLY NOW
+                      </button>
+                    </Link>
                   ) : (
                     <button className={style.close}>Registration closed</button>
                   )}
