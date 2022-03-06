@@ -27,6 +27,7 @@ function Brochure({ course }) {
   function mailBrochure() {
     var data = qs.stringify({
       mail: formValue.mail,
+      name:formValue.name
     });
     var config = {
       method: "post",
