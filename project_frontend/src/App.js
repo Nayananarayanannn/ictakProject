@@ -9,6 +9,7 @@ import Courses from './pages/courses/Courses';
 import Course from  './pages/courses/course/Course';
 import News from "./pages/news/News";
 import RegisterCourse from "./pages/courses/course/contents/RegisterCourse";
+import Partnership from "./pages/partnership/Partnership";
 
 
 
@@ -27,6 +28,7 @@ function App() {
           <Route path='/course/:id' element = {<Course/>}/>
           <Route path='/course/:id/apply' element = {<RegisterCourse/>}/>
           <Route path='/news' element = {<News/>}/>
+          <Route path='/partnership' element = {<Partnership/>}/>
         </Routes>
 
         <Footer />

@@ -15,6 +15,8 @@ function Brochure({ course }) {
     e.preventDefault();
     mailBrochure();
     alert(`${course.url}`);
+    setFormValue({name:"",phone:"",mail:"",degree:""})
+    
   };
 
   // manage form change

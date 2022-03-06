@@ -9,7 +9,7 @@ return(
     <h1 className="underline text-4xl font-bold text-center pt-12 pr-4 pl-2 capitalize" > NORKA Roots provides opportunity to study job-oriented new-generation courses with scholarship </h1>
     </div>
 
-    <div className="newsPara pt-4 pr-4 pl-2">
+    <div className="newsPara pt-4 pr-4 pl-2 block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14 bg-[#FFFFFFA8] backdrop-blur-sm aos-init aos-animate">
 
     <p className="text-center  pt-6 pr-4 pl-2  text-justify capitalize "> Aimed at addressing the issue of youth unemployment in Kerala,NORKA Roots is providing an opportunity to study job-oriented new-generation courses with scholarship.<b> NORKA Roots</b> is providing the opportunity for the youth to study innovative courses in association with ICT Academy, an initiative of the Government of India in collaboration with state governments and industries.</p>
     

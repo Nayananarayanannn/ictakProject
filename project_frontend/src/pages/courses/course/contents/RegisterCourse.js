@@ -1,12 +1,16 @@
-import React from 'react';
-import { useLocation, useParams } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useLocation, useParams } from 'react-router-dom';
+import Aos from "aos";
 
 function RegisterCourse(props) {
 
-    const { id } = useParams();
+    useEffect(() => {
+        Aos.init({});
+      }, []);
+
+    // get particulkar course details
     const location = useLocation();
     const course = location.state.course;
-    console.log(course);
 
     return (
         <div className='registerCourse'>
@@ -78,6 +82,8 @@ function RegisterCourse(props) {
                   </div>
 
                     </form>
+                    <br/>
+                    <Link to={`/course/${course.url}`}>View {course.name} course Details</Link>
       </div>
       
     </div>
