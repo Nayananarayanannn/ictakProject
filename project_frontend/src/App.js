@@ -10,6 +10,9 @@ import Course from  './pages/courses/course/Course';
 import News from "./pages/news/News";
 import RegisterCourse from "./pages/courses/course/contents/RegisterCourse";
 import Partnership from "./pages/partnership/Partnership";
+import Academic from "./pages/membership/academic/Academic";
+import Members from "./pages/membership/academic/Members";
+import NotFoundPage from "./components/NotFoundPage";
 
 
 
@@ -29,6 +32,10 @@ function App() {
           <Route path='/course/:id/apply' element = {<RegisterCourse/>}/>
           <Route path='/news' element = {<News/>}/>
           <Route path='/partnership' element = {<Partnership/>}/>
+          <Route path='/membership/academic' element = {<Academic/>}/>
+          <Route path='/membership/academic/members' element = {<Members/>}/>
+          <Route path='/:error' element = {<NotFoundPage/>}/>
+          
         </Routes>
 
         <Footer />
