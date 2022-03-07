@@ -19,7 +19,7 @@ function Aboutandobjective({ course }) {
             <div className="cardBody">
               <img
                 className="aboutImage"
-                src="https://media.istockphoto.com/photos/elearning-education-concept-learning-online-picture-id1290864946?b=1&k=20&m=1290864946&s=170667a&w=0&h=zZq7rG5McSptSIpEm9f8iTGd3Mrdkcslakr91T7qTYM="
+                src="https://i0.wp.com/ictkerala.org/wp-content/uploads/2018/12/ict-1.gif?fit=678%2C382&ssl=1"
                 alt="about"
               />
               <section className="cardStats"></section>

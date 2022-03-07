@@ -41,9 +41,9 @@ function Partnership(props) {
         </svg>
       </div>
       <div className="partnershipForms text-center text-4xl text-white font-bold ">
-        <a href="https://ictkerala.org/wp-content/uploads/2020/06/ICTAK-TSP-002-1.pdf"><h2 className="hover:text-blue-100">Download partnership Proposal</h2></a>
+        <a href="https://ictkerala.org/wp-content/uploads/2020/06/ICTAK-TSP-002-1.pdf"><h2 data-aos="flip-down" data-aos-duration="1000" className="hover:text-blue-100">Download partnership Proposal</h2></a>
         <br/>
-        <a href ="https://docs.google.com/forms/d/1H-UmE62LByyHqlzq88Ozn9bUqaxc08G9ne70c-Tiun4/viewform?edit_requested=true"><h2 className="hover:text-blue-100">Click here to fill the form</h2></a>
+        <a href ="https://docs.google.com/forms/d/1H-UmE62LByyHqlzq88Ozn9bUqaxc08G9ne70c-Tiun4/viewform?edit_requested=true"><h2 data-aos="flip-down" data-aos-duration="1000" className="hover:text-blue-100">Click here to fill the form</h2></a>
       </div>
          
     </section>

@@ -13,6 +13,8 @@ import Partnership from "./pages/partnership/Partnership";
 import Academic from "./pages/membership/academic/Academic";
 import Members from "./pages/membership/academic/Members";
 import NotFoundPage from "./components/NotFoundPage";
+import Corporate from "./pages/membership/corporate/Corporate";
+import Register from "./pages/membership/corporate/Register";
 
 
 
@@ -34,6 +36,8 @@ function App() {
           <Route path='/partnership' element = {<Partnership/>}/>
           <Route path='/membership/academic' element = {<Academic/>}/>
           <Route path='/membership/academic/members' element = {<Members/>}/>
+          <Route path='/membership/corporate' element = {<Corporate/>}/>
+          <Route path='/membership/corporate/register' element = {<Register/>}/>
           <Route path='/:error' element = {<NotFoundPage/>}/>
           
         </Routes>

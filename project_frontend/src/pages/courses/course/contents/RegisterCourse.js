@@ -8,7 +8,7 @@ function RegisterCourse(props) {
         Aos.init({});
       }, []);
 
-    // get particulkar course details
+    // get particular course details
     const location = useLocation();
     const course = location.state.course;
 
