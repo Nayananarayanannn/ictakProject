@@ -1,5 +1,5 @@
 const Knorouter = require('express').Router();
-const knowledgeModel = require('../Model/knowledgeModel');
+const knowledgeModel = require('../../Model/knowledgeModel');
 
 Knorouter.get("/getKnowdata", async (req, res2) => {
     try {

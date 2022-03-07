@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const teamModel = require('../Model/teamModel');
+const teamModel = require('../../Model/teamModel');
 
 
 //add team
