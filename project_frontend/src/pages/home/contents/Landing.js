@@ -213,12 +213,12 @@ The Chief Minister also released the logo of the ICT Academy and Education Minis
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("../../../assets/img/team-4-470x470.png").default}
+                    src="https://i0.wp.com/ictkerala.org/wp-content/uploads/2019/01/589-AM-1.jpg?w=1170"
                     className="shadow-lg rounded-full max-w-full mx-auto"
                     style={{ maxWidth: "120px" }}
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Cyril John Varghese</h5>
+                    <h5 className="text-xl font-bold">Nazeef</h5>
                     <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                       Data Scientist
                     </p>

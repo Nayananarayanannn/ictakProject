@@ -30,5 +30,8 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require('tw-elements/dist/plugin')],
+  plugins: [require('tw-elements/dist/plugin'),
+  require('flowbite/plugin')
+],
+  
 }

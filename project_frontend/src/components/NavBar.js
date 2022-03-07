@@ -1,13 +1,11 @@
-
-   
-import React from 'react'
+import React from "react";
 
 const NavBar = () => {
   return (
     <nav className="bg-[#111827] px-2 sm:px-4 py-2.5  fixed top-0 inset-x-0 z-50">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <a href="/" className="flex items-center">
-        <img
+          <img
             className="h-[2.25rem] rounded-md"
             src="https://ictkerala.org/wp-content/uploads/2019/01/cropped-ict-ico.png"
             height={40}
@@ -114,7 +112,9 @@ const NavBar = () => {
               <a
                 href="https://retail.ictkerala.org"
                 className="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-500 md:hover:bg-transparent md:border-0 md:hover:text-[#5297E0] md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                target="_blank" rel="noreferrer">
+                target="_blank"
+                rel="noreferrer"
+              >
                 Paatshala
               </a>
             </li>
@@ -130,7 +130,9 @@ const NavBar = () => {
               <a
                 href="https://ictkerala.zohorecruit.com/jobs/Careers"
                 className="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-500 md:hover:bg-transparent md:border-0 md:hover:text-[#5297E0] md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                target="_blank" rel="noreferrer">
+                target="_blank"
+                rel="noreferrer"
+              >
                 Careers
               </a>
             </li>
@@ -147,6 +149,6 @@ const NavBar = () => {
       </div>
     </nav>
   );
-}
+};
 
 export default NavBar;
