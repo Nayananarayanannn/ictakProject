@@ -2,9 +2,9 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const courseRouter = require("./routes/course/courseRouter");
-const Indrouter = require("./routes/IndustrialRouter");
-const router = require("./routes/TeamRouter");
-const Knorouter = require("./routes/KnowledgeRouter");
+const Indrouter = require("./routes/about/IndustrialRouter");
+const router = require("./routes/about/TeamRouter");
+const Knorouter = require("./routes/about/KnowledgeRouter");
 
 const app = express();
 
