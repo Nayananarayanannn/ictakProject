@@ -15,6 +15,9 @@ import Members from "./pages/membership/academic/Members";
 import NotFoundPage from "./components/NotFoundPage";
 import Corporate from "./pages/membership/corporate/Corporate";
 import Register from "./pages/membership/corporate/Register";
+import Admin from "./pages/admin/Admin";
+import Testimonial from "./pages/admin/Testimonial";
+import CourseDash from "./pages/admin/CourseDash";
 
 
 
@@ -38,6 +41,10 @@ function App() {
           <Route path='/membership/academic/members' element = {<Members/>}/>
           <Route path='/membership/corporate' element = {<Corporate/>}/>
           <Route path='/membership/corporate/register' element = {<Register/>}/>
+          <Route path="/admin" element = {<Admin/>}/>
+          <Route path="/test" element = {<Testimonial/>}/>
+          <Route path="/coursedash" element = {<CourseDash/>}/>
+          
           <Route path='/:error' element = {<NotFoundPage/>}/>
           
         </Routes>
