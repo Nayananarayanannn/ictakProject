@@ -22,6 +22,15 @@ import Example from "./pages/admin/courses/CourseView";
 import Event from "./pages/events/ICSET";
 import ICSET from "./pages/events/ICSET";
 import Techathlon from "./pages/events/Techathlon";
+import Team from "./pages/admin/Team/Team";
+import Addteam from "./pages/admin/Team/Addteam";
+import EditTeam from "./pages/admin/Team/Edit";
+import Details from "./pages/admin/Team/Details";
+import Industrial from "./pages/admin/Industrial/Industrial";
+import Addindustrial from "./pages/admin/Industrial/Addindustrial";
+import Knowledge from "./pages/admin/knowledge/knowledge";
+import Addknowledge from "./pages/admin/knowledge/Addknowledge";
+
 
 
 
@@ -49,6 +58,14 @@ function App() {
           <Route path = '/events/techathlon' element = {<Techathlon/>}/>
           <Route path="/admin/*" element = {<Admin/>}/>
           <Route path="/modal" element = {<Example/>}/>
+           <Route path="/team" element = {<Team/>}/>
+          <Route path="/Addteam" element = {<Addteam/>}/>
+          <Route path="team/edit/:id" element = {<EditTeam/>}/>
+          <Route path="team/view/:id" element = {<Details/>}/>
+          <Route path="/industrial" element = {<Industrial/>}/>
+          <Route path="/Addindustrial" element = {<Addindustrial/>}/>
+          <Route path="/knowledge" element = {<Knowledge/>}/>
+          <Route path="/Addknowledge" element = {<Addknowledge/>}/>
           <Route path='/:error' element = {<NotFoundPage/>}/>
           
         </Routes>
