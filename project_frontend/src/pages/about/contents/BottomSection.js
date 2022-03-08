@@ -406,7 +406,7 @@ function BottomSection() {
       <div
         data-aos-easing="linear"
         data-aos-duration="2000"
-        className="w-full  flex items-center justify-center py-16 md:py-12 bg-gradient-to-r from-indigo-700 to-purple-500 rounded-lg"
+        className="w-full  flex items-center justify-center my-5 py-16 md:py-12 bg-gradient-to-r from-indigo-700 to-purple-500 rounded-lg"
       >
         <p className="text-center text-3xl font-bold text-white">
           Marketing Partners
