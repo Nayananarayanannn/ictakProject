@@ -65,7 +65,7 @@ function Parallax({ course, style }) {
               width: "322",
               height: "250",
             }}
-            src="https://www.canarahsbclife.com/content/dam/choice/blog-inner/images/what-is-the-eligibility-to-have-life-insurance.jpg"
+            src="https://cache.careers360.mobi/media/presets/860X430/article_images/2020/10/6/Eligibility_critera.jpg"
             alt="Mr and Mrs"
           />
           <h1>Eligibility</h1>
