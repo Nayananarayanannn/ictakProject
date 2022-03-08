@@ -402,6 +402,38 @@ function BottomSection() {
       </div>
 
 
+      
+
+      {/* industrial partners start here */}
+      <div className="p-8">
+        <p className="text-center text-3xl font-bold text-black">
+          Industrial Partners
+        </p>
+        <Slider
+          dots={false}
+          slidesToShow={7}
+          slidesToScroll={1}
+          autoplay={true}
+          autoplaySpeed={1500}
+        >
+          {getinddata.map((ele) => {
+            return (
+              <>
+                <div className="w-25 h-[29vh] ">
+
+                  <img
+                    alt="logo 1"
+                    src={ele.image}
+                  />
+                </div>
+              </>
+            )
+          }
+          )}
+
+        </Slider>
+      </div>
+
       {/* marketing partners starts here */}
       <div
         data-aos-easing="linear"
@@ -445,36 +477,6 @@ function BottomSection() {
             />
           </div>
         </div>
-      </div>
-
-      {/* industrial partners start here */}
-      <div className="p-8">
-        <p className="text-center text-3xl font-bold text-black">
-          Industrial Partners
-        </p>
-        <Slider
-          dots={false}
-          slidesToShow={7}
-          slidesToScroll={1}
-          autoplay={true}
-          autoplaySpeed={1500}
-        >
-          {getinddata.map((ele) => {
-            return (
-              <>
-                <div className="w-25 h-[29vh] ">
-
-                  <img
-                    alt="logo 1"
-                    src={ele.image}
-                  />
-                </div>
-              </>
-            )
-          }
-          )}
-
-        </Slider>
       </div>
 
       {/* Knowledge partners start here */}
