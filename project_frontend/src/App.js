@@ -17,7 +17,11 @@ import Corporate from "./pages/membership/corporate/Corporate";
 import Register from "./pages/membership/corporate/Register";
 import Admin from "./pages/admin/Admin";
 import Testimonial from "./pages/admin/Testimonial";
-import CourseDash from "./pages/admin/CourseDash";
+import CourseDash from "./pages/admin/courses/CourseDash";
+import Example from "./pages/admin/courses/CourseView";
+import Event from "./pages/events/ICSET";
+import ICSET from "./pages/events/ICSET";
+import Techathlon from "./pages/events/Techathlon";
 
 
 
@@ -41,10 +45,10 @@ function App() {
           <Route path='/membership/academic/members' element = {<Members/>}/>
           <Route path='/membership/corporate' element = {<Corporate/>}/>
           <Route path='/membership/corporate/register' element = {<Register/>}/>
-          <Route path="/admin" element = {<Admin/>}/>
-          <Route path="/test" element = {<Testimonial/>}/>
-          <Route path="/coursedash" element = {<CourseDash/>}/>
-          
+          <Route path = '/events/icset' element = {<ICSET/>}/>
+          <Route path = '/events/techathlon' element = {<Techathlon/>}/>
+          <Route path="/admin/*" element = {<Admin/>}/>
+          <Route path="/modal" element = {<Example/>}/>
           <Route path='/:error' element = {<NotFoundPage/>}/>
           
         </Routes>
