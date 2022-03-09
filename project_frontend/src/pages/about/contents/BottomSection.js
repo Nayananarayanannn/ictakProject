@@ -295,10 +295,10 @@ function BottomSection() {
 
       {/* team starts here */}
       <div className="p-8 w-full bg-gray-100 border-2 shadow-xl box-border rounded-xl shadow-8xl mx-auto ">
-        <p className="text-center text-3xl font-bold text-cyan-600">
+        <p className="text-center text-xl font-bold text-cyan-600">
           Professional team
         </p>
-        <p className="text-center mb-12 text-xl font-normal text-gray-500">
+        <p className="text-center mb-12 text-md font-normal text-gray-900">
           Meet the best team in world
         </p>
 
@@ -402,6 +402,38 @@ function BottomSection() {
       </div>
 
 
+      
+
+      {/* industrial partners start here */}
+      <div className="p-8">
+        <p className="text-center text-3xl font-bold text-black">
+          Industrial Partners
+        </p>
+        <Slider
+          dots={false}
+          slidesToShow={7}
+          slidesToScroll={1}
+          autoplay={true}
+          autoplaySpeed={1500}
+        >
+          {getinddata.map((ele) => {
+            return (
+              <>
+                <div className="w-25 h-[29vh] ">
+
+                  <img
+                    alt="logo 1"
+                    src={ele.image}
+                  />
+                </div>
+              </>
+            )
+          }
+          )}
+
+        </Slider>
+      </div>
+
       {/* marketing partners starts here */}
       <div
         data-aos-easing="linear"
@@ -445,36 +477,6 @@ function BottomSection() {
             />
           </div>
         </div>
-      </div>
-
-      {/* industrial partners start here */}
-      <div className="p-8">
-        <p className="text-center text-3xl font-bold text-black">
-          Industrial Partners
-        </p>
-        <Slider
-          dots={false}
-          slidesToShow={7}
-          slidesToScroll={1}
-          autoplay={true}
-          autoplaySpeed={1500}
-        >
-          {getinddata.map((ele) => {
-            return (
-              <>
-                <div className="w-25 h-[29vh] ">
-
-                  <img
-                    alt="logo 1"
-                    src={ele.image}
-                  />
-                </div>
-              </>
-            )
-          }
-          )}
-
-        </Slider>
       </div>
 
       {/* Knowledge partners start here */}

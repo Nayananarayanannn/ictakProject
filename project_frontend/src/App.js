@@ -25,6 +25,8 @@ import Techathlon from "./pages/events/Techathlon";
 
 
 
+
+
 function App() {
   return (
     <Router>
@@ -49,6 +51,7 @@ function App() {
           <Route path = '/events/techathlon' element = {<Techathlon/>}/>
           <Route path="/admin/*" element = {<Admin/>}/>
           <Route path="/modal" element = {<Example/>}/>
+           
           <Route path='/:error' element = {<NotFoundPage/>}/>
           
         </Routes>
