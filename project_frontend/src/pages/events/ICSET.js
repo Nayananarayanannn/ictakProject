@@ -39,6 +39,7 @@ function ICSET(props) {
               </div>
               <div class="mt-4 sm:pr-8">
                 <p class="text-justify text-m text-gray-200">
+                {/* contents */}
                   Lorem ipsum dolor sit amet. Eos deleniti recusandae et omnis
                   quaerat vel voluptas odit est laborum porro ea doloremque quia
                   et tempora optio et dolorem molestias. Eos necessitatibus quis
