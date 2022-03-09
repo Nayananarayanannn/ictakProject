@@ -1,8 +1,19 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import CourseAdd from "./courses/CourseAdd";
 import CourseDash from "./courses/CourseDash";
+import CourseEdit from "./courses/CourseEdit";
+import CourseView from "./courses/CourseView";
 import CourseModal from "./courses/CourseView";
 import Dashbord from "./Dashbord";
+import Addindustrial from "./industrial/Addindustrial";
+import Industrial from "./industrial/Industrial";
+import Addknowledge from "./knowledge/Addknowledge";
+import Knowledge from "./knowledge/Knowledge";
+import Addteam from "./team/Addteam";
+import Details from "./team/Details";
+import EditTeam from "./team/Edit";
+import Team from "./team/Team";
 
 const Admin = () => {
   return (
@@ -151,7 +162,7 @@ const Admin = () => {
                   </a>
                   <a
                     class="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
-                    href="#"
+                    href="/admin/industrial"
                   >
                     <span class="text-left">
                       <svg
@@ -169,7 +180,7 @@ const Admin = () => {
                   </a>
                   <a
                     class="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
-                    href="#"
+                    href="/admin/knowledge"
                   >
                     <span class="text-left">
                       <svg
@@ -223,7 +234,7 @@ const Admin = () => {
                   </a>
                   <a
                     class="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
-                    href="#"
+                    href="/admin/team"
                   >
                     <span class="text-left">
                       <svg
@@ -379,11 +390,21 @@ const Admin = () => {
               </div>
             </header>
 
-                <Routes>
-                    <Route path ='/' element ={<Dashbord/>}/>
-                    <Route path = '/coursedash/*' element= {<CourseDash/>}/>
-                </Routes>
-
+            <Routes>
+              <Route path="/" element={<Dashbord />} />
+              <Route path="/coursedash/*" element={<CourseDash />} />
+              <Route path="/coursedash/view/:name" element={<CourseView/>}/>
+              <Route path="/coursedash/edit/:name" element={<CourseEdit/>}/>
+              <Route path="/coursedash/add" element={<CourseAdd/>}/>
+              <Route path="/industrial/" element={<Industrial/>}/>
+              <Route path="/industrial/Addindustrial" element={<Addindustrial/>}/>
+              <Route path="/knowledge/" element={<Knowledge/>}/>
+            <Route path="/knowledge/Addknowledge" element={<Addknowledge/>}/>
+              <Route path="/team/" element={<Team/>}/>
+            <Route path="/team/Addteam" element={<Addteam/>}/>
+            <Route path="/team/view/:id" element={<Details/>}/>
+            <Route path="/team/edit/:id" element={<EditTeam/>}/>
+            </Routes>
           </div>{" "}
         </div>
       </main>

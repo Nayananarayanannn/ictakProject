@@ -6,43 +6,33 @@ const Schema = mongoose.Schema;
 var Courses = new Schema({
   url: {
     type: String,
-    required: true,
   },
   name: {
     type: String,
-    required: true,
   },
   status: {
     type: String,
-    required: true,
   },
   title: {
     type: String,
-    required: true,
   },
   quote: {
     type: String,
-    required: true,
   },
   shortDescription: {
     type: String,
-    required: true,
   },
   objectives: {
     type: Array,
-    required: true,
   },
   highlights: {
     type: Array,
-    required: true,
   },
   agenda: {
     type: Array,
-    required: true,
   },
   eligibility: {
     type: Array,
-    required: true,
   },
   fee: {
     type: Number,
@@ -50,11 +40,9 @@ var Courses = new Schema({
   },
   dates: {
     type: Array,
-    required: true,
   },
   image: {
     type: String,
-    required: true,
   },
 });
 

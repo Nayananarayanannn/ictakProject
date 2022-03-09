@@ -1,31 +1,54 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { NavLink, Route, Routes } from "react-router-dom";
-import CourseView from "./CourseView";
+import { NavLink } from "react-router-dom";
+;
 
 function CourseDash(props) {
+
     const [courseLists, setCourseLists] = useState([]);
 
+    const getdata=()=>{
+      var config = {
+        method: "get",
+        url: "http://localhost:8000/api/courses",
+      };
+  
+      axios(config)
+        .then(function (response) {
+          console.log(JSON.stringify(response.data));
+          setCourseLists(response.data);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    }
      // Fetch course list data from DB
   useEffect(() => {
+   getdata();
+  }, []);
+
+  const DeleteCourse = (course)=>{
     var config = {
-      method: "get",
-      url: "http://localhost:8000/api/courses",
+      method: "post",
+      url: `http://localhost:8000/api/courses/delete-course/${course.url}`,
     };
 
     axios(config)
       .then(function (response) {
+        alert( `Deleting Course ${course.name}`)
         console.log(JSON.stringify(response.data));
-        setCourseLists(response.data);
+        getdata();
+        
       })
       .catch(function (error) {
         console.log(error);
       });
-  }, []);
+  }
 
   return (
     <div>
       <div className="container mx-auto px-4 sm:px-8  relative">
+      
         <div className="py-6">
           <div className="flex flex-row mb-1 sm:mb-0 justify-between w-full">
             <h2 className="text-2xl leading-tight font-bold">Courses</h2>
@@ -33,7 +56,7 @@ function CourseDash(props) {
               <NavLink
                 className="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-blue-200"
                 type="submit"
-                to="/CourseDash"
+                to="/admin/coursedash/add"
               >
                 Add
               </NavLink>
@@ -92,9 +115,6 @@ function CourseDash(props) {
                   
                   return(
                     <>
-                    <Routes>
-              <Route path='/view/:name' element = {<CourseView course={course}/>}/>
-              </Routes>
                     <tr>
                     <td
                       scope="col"
@@ -153,6 +173,7 @@ function CourseDash(props) {
                         </svg>
                       </button>
                       </a>
+                      <a href={`/admin/coursedash/edit/${course.url}`}>
                       <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-1 border border-blue-700 rounded">
                         <svg
                           width="22"
@@ -166,7 +187,8 @@ function CourseDash(props) {
                           />
                         </svg>
                       </button>
-                      <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-1 border border-red-700 rounded">
+                      </a>
+                      <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-1 border border-red-700 rounded" onClick={()=>DeleteCourse(course)}>
                         <svg
                           width="22"
                           fill="currentColor"

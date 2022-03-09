@@ -8,7 +8,7 @@ const nodemailer = require("nodemailer");
 // Multer codes for file uploading
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, path.join(__dirname, "../../ICTAK-PROJECT/public/courseImages"));
+    cb(null, path.join(__dirname, "../../../project_frontend/public/courseImages"));
   },
   filename: function (req, file, cb) {
     cb(null, uuidv4() + "-" + Date.now() + path.extname(file.originalname));
@@ -43,6 +43,65 @@ router.route("/:name").get((req, res) => {
     res.json(course);
   });
 });
+
+// add new course
+router.route("/add-course").post(upload.single('image'),(req,res)=>{
+  console.log(req.body);
+  var item={
+    url:req.body.url,
+    name:req.body.name,
+    status:req.body.status,
+    title:req.body.title,
+    quote:req.body.quote,
+    shortDescription:req.body.shortDescription,
+    fee:req.body.fee,
+    image:req.file.filename
+  };
+  const course= new Courses(item);
+  course.save();
+  res.send("ok");
+})
+
+// update courses
+router.route(`/edit-course/:name`).post(upload.single('image'),(req,res)=>{
+  const id = req.params.name
+
+  const course = Courses.findOne({url:id})
+  var image= course.image;
+
+  const url = req.body.url;
+  const name = req.body.name;
+  const status=req.body.status;
+  const title=req.body.title;
+  const quote = req.body.quote;
+  const shortDescription=req.body.shortDescription;
+  const fee = req.body.fee;
+  if(req.file){
+    image=req.file.filename;
+  }
+  const filter={url:id};
+
+  const update={$set:{url:url,status:status,quote:quote,shortDescription:shortDescription,fee:fee,title:title,name:name,image:image}};
+
+  Courses.findOneAndUpdate(filter, update, { new: true })
+  .then(function(course){
+    res.json(course)
+  }
+  )
+})
+// delete courses
+router.route('/delete-course/:id').post( function (req, res) {
+  const url = req.params.id
+  console.log(url)
+  Courses.findOneAndDelete({ url: url})
+      
+        .then(function () {
+  
+            console.log("deleted")
+            res.send("deleted")
+  
+        })  
+})
 
 // post route for sending brochure using nodemailer
 router.route("/:name/mailer").post((req, res) => {
