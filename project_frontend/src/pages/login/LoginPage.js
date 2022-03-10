@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { loginValidation } from "../validation";
-import jwt from 'jwt-decode'
-import { useNavigate } from "react-router-dom";
+import React, { useState} from "react";
+import { loginValidation } from "./validation";
+import jwt from 'jwt-decode';
 
 const style = {
   wrapper: `relative`,
@@ -11,7 +10,6 @@ const style = {
 };
 
 const LoginPage = () => {
-  const navigate = useNavigate();
   
   //Manage Form Inputs
   const [inputs, setInputs] = useState({ username: "", password: "" });
@@ -62,7 +60,7 @@ const LoginPage = () => {
   };
 
   //Manage Form Submit
-  const handleSubmit = (event) => {
+  const handleSubmit = async(event) => {
     event.preventDefault();
     setErrors(loginValidation(inputs));
     setIssubmit(true);
@@ -108,7 +106,7 @@ const LoginPage = () => {
                       <h1 className="mb-4 text-2xl font-bold text-center text-white">
                         Login
                       </h1>
-                      <form
+                      <form id="login"
                         action="/api/login"
                         onSubmit={handleSubmit}
                         method="post"
