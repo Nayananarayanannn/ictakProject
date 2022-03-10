@@ -6,7 +6,8 @@ const Indrouter = require("./routes/about/IndustrialRouter");
 const router = require("./routes/about/TeamRouter");
 const Knorouter = require("./routes/about/KnowledgeRouter");
 const TestimonialRouter = require ("./routes/testimonials/TestimonialRouter")
-const CourseRegisterRouter = require('./routes/course/courseRegister')
+const CourseRegisterRouter = require('./routes/course/courseRegister');
+const LoginRouter = require('./routes/login/LoginRouter')
 const app = express();
 
 app.use(express.json());
@@ -61,6 +62,7 @@ app.use(router);
 app.use(Indrouter);
 app.use(Knorouter);
 app.use("/api/testimonials",TestimonialRouter);
+app.use('/api',LoginRouter);
 
 // listen port
 app.listen(process.env.PORT || 8000, () => {

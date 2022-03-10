@@ -65,8 +65,8 @@ const DeleteTest=(name)=>{
               </NavLink>
             </div>
           </div>
-          <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
-            <div className="inline-block min-w-full shadow rounded-lg overflow-hidden">
+          <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4">
+            <div className="inline-block min-w-full shadow rounded-lg overflow-auto" style={{maxHeight:"80vh"}}>
               <table className="min-w-full leading-normal">
                 <thead>
                   <tr>

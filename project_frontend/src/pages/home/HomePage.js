@@ -7,6 +7,7 @@ import Hero from './contents/Hero';
 import Landing from './contents/Landing';
 
 const HomePage = () => {
+  console.log(localStorage.getItem('admin'))
   return (
     <>
     <Hero />

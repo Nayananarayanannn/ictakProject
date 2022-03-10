@@ -28,11 +28,12 @@ import Techathlon from "./pages/events/Techathlon";
 
 
 function App() {
+  const admin = localStorage.getItem('admin');
+  console.log(admin);
   return (
-    <Router>
-      <>
-        <NavBar />
-
+    <>
+      <Router>
+      {admin=='true'? <></> : <NavBar/>}
         {/* Routings */}
         <Routes>
           <Route path="/" element={<HomePage />}/>
@@ -51,14 +52,11 @@ function App() {
           <Route path = '/events/techathlon' element = {<Techathlon/>}/>
           <Route path="/admin/*" element = {<Admin/>}/>
           <Route path="/modal" element = {<Example/>}/>
-           
           <Route path='/:error' element = {<NotFoundPage/>}/>
-          
         </Routes>
-
-        <Footer />
-      </>
+        {admin=='true'? <></> : <Footer/>}
     </Router>
+    </>
   );
 }
 

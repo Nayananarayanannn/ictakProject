@@ -18,12 +18,13 @@ import Testimonial from "./testimonial/Testimonial";
 import TestimonialAdd from "./testimonial/TestimonialsAdd";
 
 const Admin = () => {
+  console.log(localStorage.getItem('admin'))
   return (
     <>
-      <main class="bg-white  relative mt-11">
+      <main class="bg-white  relative h-screen">
         <div class="flex items-start justify-between  ">
-          <div class="   lg:block  my-4 ml-4 shadow-lg relative w-80 overscroll-auto ">
-            <div class="overflow-auto h-screen rounded-2xl bg-gray-700">
+          <div class="   lg:block ml-4 shadow-lg relative w-80 overscroll-auto ">
+            <div class="overflow-hidden rounded-2xl bg-gray-700" style={{height:"112vh"}}>
               <div class="flex items-center justify-center pt-6 "></div>
 
               <nav class="mt-2 ">
@@ -376,7 +377,7 @@ const Admin = () => {
                               <li>
                                 <a
                                   class="dropdown-item text-sm py-2 px-4 font-bold font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
-                                  href="#"
+                                  href="/" onClick={()=>{localStorage.setItem('admin',false)}}
                                 >
                                   Logout
                                 </a>
