@@ -5,7 +5,6 @@ import CourseAdd from "./courses/CourseAdd";
 import CourseDash from "./courses/CourseDash";
 import CourseEdit from "./courses/CourseEdit";
 import CourseView from "./courses/CourseView";
-import CourseModal from "./courses/CourseView";
 import Dashbord from "./Dashbord";
 import Addindustrial from "./industrial/Addindustrial";
 import Industrial from "./industrial/Industrial";

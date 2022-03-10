@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import ReactHTMLTableToExcel from 'react-html-table-to-excel'
 
 function CourseRegister(props) {
     const [register,setRegister] = useState([])
@@ -29,13 +29,14 @@ function CourseRegister(props) {
   return (
     <div>
       <div className="container mx-auto px-4">
+      
         <div className="py-8">
           <div className="flex flex-row mb-1 justify-between w-full">
             <h2 className="text-2xl leading-tight">Course Registered Details</h2>
           </div>
           <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-hidden">
             <div className="inline-block min-w-full shadow rounded-lg overflow-hidden">
-              <table className="min-w-full leading-normal overflow-hidden">
+              <table id="table-to-xls" className="min-w-full leading-normal overflow-hidden">
                 <thead>
                   <tr>
                   <th
@@ -106,6 +107,14 @@ function CourseRegister(props) {
           </div>
         </div>
       </div>
+      <br/>
+      <ReactHTMLTableToExcel
+                    id="test-table-xls-button"
+                    className="download-table-xls-button btn btn-success mb-3 px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600"
+                    table="table-to-xls"
+                    filename="tablexls"
+                    sheet="tablexls"
+                    buttonText="Download as Excel"/>
     </div>
   );
 }
