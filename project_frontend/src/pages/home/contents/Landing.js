@@ -117,8 +117,20 @@ The Chief Minister also released the logo of the ICT Academy and Education Minis
                     <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                       Front End Developer
                     </p>
-                    <h6>@Ernst & Young</h6>
+                    <h6>Ernst & Young</h6>
                     <div className="mt-6">
+                      <button
+                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-dribbble"></i>
+                      </button>
+                      <button
+                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-google"></i>
+                      </button>
                       <button
                         className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
@@ -126,16 +138,10 @@ The Chief Minister also released the logo of the ICT Academy and Education Minis
                         <i className="fab fa-twitter"></i>
                       </button>
                       <button
-                        className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-facebook-f"></i>
-                      </button>
-                      <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-dribbble"></i>
+                        <i className="fab fa-instagram"></i>
                       </button>
                     </div>
                   </div>
@@ -154,8 +160,14 @@ The Chief Minister also released the logo of the ICT Academy and Education Minis
                     <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                       Data Scientist
                     </p>
-                    <h6>@Edstem Technologies</h6>
+                    <h6>Edstem Technologies</h6>
                     <div className="mt-6">
+                      <button
+                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-dribbble"></i>
+                      </button>
                       <button
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
@@ -163,10 +175,16 @@ The Chief Minister also released the logo of the ICT Academy and Education Minis
                         <i className="fab fa-google"></i>
                       </button>
                       <button
-                        className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-facebook-f"></i>
+                        <i className="fab fa-twitter"></i>
+                      </button>
+                      <button
+                        className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-instagram"></i>
                       </button>
                     </div>
                   </div>
@@ -185,8 +203,14 @@ The Chief Minister also released the logo of the ICT Academy and Education Minis
                     <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                       Data Analystics
                     </p>
-                    <h6>@TCS</h6>
+                    <h6>TCS</h6>
                     <div className="mt-6">
+                      <button
+                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-dribbble"></i>
+                      </button>
                       <button
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
@@ -222,7 +246,7 @@ The Chief Minister also released the logo of the ICT Academy and Education Minis
                     <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                       Data Scientist
                     </p>
-                    <h6>@Eynetech services</h6>
+                    <h6>Eynetech services</h6>
                     <div className="mt-6">
                       <button
                         className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"

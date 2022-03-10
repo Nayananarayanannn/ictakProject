@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { loginValidation } from "../validation";
+import { loginValidation } from "./validation";
 
 const style = {
   wrapper: `relative`,
