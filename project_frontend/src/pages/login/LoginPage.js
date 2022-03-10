@@ -25,10 +25,10 @@ const LoginPage = () => {
   };
 
   //Manage Form Submit
-  const handleSubmit = (event) => {
+  const handleSubmit = async(event) => {
     event.preventDefault();
-    setErrors(loginValidation(inputs));
-    setIssubmit(true);
+   setErrors(loginValidation(inputs));
+   setIssubmit(true);
   };
 
   //Successful Signup validation
@@ -68,7 +68,7 @@ const LoginPage = () => {
                       <h1 className="mb-4 text-2xl font-bold text-center text-white">
                         Login
                       </h1>
-                      <form
+                      <form id="login"
                         action="/api/login"
                         onSubmit={handleSubmit}
                         method="post"
