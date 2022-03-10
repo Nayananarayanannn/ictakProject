@@ -1,8 +1,8 @@
 import React, { useEffect}from "react";
-import CoursesCard from "../../courses/course/CoursesCard";
+import CourseList from "./CoursesList";
 import Aos from "aos";
 
-const CoursesList = (props) => {
+const Courses = (props) => {
     useEffect(() => {
         Aos.init({});
       }, []);
@@ -30,11 +30,11 @@ const CoursesList = (props) => {
       </div>
       <div class="grid grid-cols-1 gap-4">
       <h1 className="text-4xl text-black-500 text-center font-bold"> Our Courses</h1>
-      <CoursesCard home={true} Aos={Aos}/>
+      <CourseList home={true} Aos={Aos}/>
       <a href="/courses" className="no-underline hover:underline text-xl font-semibold text-center">View More...</a>
       </div>
     </section>
   );
 };
 
-export default CoursesList;
+export default Courses;

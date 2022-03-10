@@ -2,8 +2,9 @@ import React from 'react'
 import About from './contents/About';
 import Announcement from './contents/Announcement';
 import Carousel from './contents/Carousel';
-import CoursesList from './contents/CourseList';
 import Hero from './contents/Hero';
+import Courses from './contents/Courses';
+import Aos from "aos";
 import Landing from './contents/Landing';
 
 const HomePage = () => {
@@ -13,7 +14,7 @@ const HomePage = () => {
     <Announcement />
     <About />
     <Carousel />
-    <CoursesList/>
+    <Courses/>
     <Landing/>
     </>
   )
