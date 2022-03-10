@@ -1,9 +1,31 @@
-import React, {Component} from 'react';
+import React, {Component, useEffect, useState} from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import axios from 'axios';
 
 function Testimonial({course}) {
+  const [tests,setTests] = useState()
+  const getData=()=>{
+    var config = {
+      method: "get",
+      url: `http://localhost:8000/api/testimonials`,
+    };
+
+    axios(config)
+      .then(function (response) {
+        setTests(response.data);
+        console.log(response.data)
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
+
+  useEffect(()=>{
+    getData();
+  },[])
+
     return (
         <div className='courseTestimonial'>
         <h2 className='text-white text-center text-4xl p-3' style={{fontFamily:'cursive'}}>"What our students say!"</h2>
@@ -15,10 +37,9 @@ function Testimonial({course}) {
           autoplaySpeed={2000}
         >
 
-
-
-            {course.testimonials?.map((el)=>{
-                return(
+{tests?.map((el)=>{
+  console.log(el)
+  return(
                     <>
                     <div>
                     <div style={{minHeight:'350px',borderRadius:'10px',backgroundColor:'rgba(255, 255, 255, 0.325)'}} className="group w-full text-white relative flex flex-col items-center hover:bg-indigo-700 cursor-pointer shadow-md md:p-12 p-6">
@@ -147,8 +168,7 @@ function Testimonial({course}) {
             </div>
             </div>
                     </>
-                )
-            })}
+                )})}
 
         </Slider>
             

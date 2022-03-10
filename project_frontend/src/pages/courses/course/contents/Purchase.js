@@ -40,12 +40,8 @@ function Purchase({ course, style }) {
                 of our finance partner named Finance Peer.
               </p>
 
-              <ul>
                 <p>Important dates</p>
-                {course.dates?.map((el) => {
-                  return <li>{el}</li>;
-                })}
-              </ul>
+                <div dangerouslySetInnerHTML={{ __html: `${course.dates}` }}></div>
             </div>
             {course.status === "open" ? (
               <Link to={`/course/${course.url}/apply`} state={{ course }}>

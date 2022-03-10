@@ -55,11 +55,15 @@ router.route("/add-course").post(upload.single('image'),(req,res)=>{
     quote:req.body.quote,
     shortDescription:req.body.shortDescription,
     fee:req.body.fee,
-    image:req.file.filename
+    image:req.file.filename,
+    objectives:req.body.objectives,
+    eligibility:req.body.eligibility,
+    agenda:req.body.agenda,
+    dates:req.body.dates
   };
   const course= new Courses(item);
   course.save();
-  res.send("ok");
+  res.send("Added Course");
 })
 
 // update courses
@@ -92,7 +96,6 @@ router.route(`/edit-course/:name`).post(upload.single('image'),(req,res)=>{
 // delete courses
 router.route('/delete-course/:id').post( function (req, res) {
   const url = req.params.id
-  console.log(url)
   Courses.findOneAndDelete({ url: url})
       
         .then(function () {

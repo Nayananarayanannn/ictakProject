@@ -30,7 +30,7 @@ const CoursesList = (props) => {
       </div>
       <div class="grid grid-cols-1 gap-4">
       <h1 className="text-4xl text-black-500 text-center font-bold"> Our Courses</h1>
-      <CoursesCard Aos={Aos}/>
+      <CoursesCard home={true} Aos={Aos}/>
       <a href="/courses" className="no-underline hover:underline text-xl font-semibold text-center">View More...</a>
       </div>
     </section>

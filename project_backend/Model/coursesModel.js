@@ -23,23 +23,20 @@ var Courses = new Schema({
     type: String,
   },
   objectives: {
-    type: Array,
-  },
-  highlights: {
-    type: Array,
+    type: String,
   },
   agenda: {
-    type: Array,
+    type: String,
   },
   eligibility: {
-    type: Array,
+    type: String,
   },
   fee: {
     type: Number,
     required: true,
   },
-  dates: {
-    type: Array,
+  dates:{ 
+    type: String,
   },
   image: {
     type: String,

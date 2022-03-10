@@ -5,7 +5,8 @@ const courseRouter = require("./routes/course/courseRouter");
 const Indrouter = require("./routes/about/IndustrialRouter");
 const router = require("./routes/about/TeamRouter");
 const Knorouter = require("./routes/about/KnowledgeRouter");
-
+const TestimonialRouter = require ("./routes/testimonials/TestimonialRouter")
+const CourseRegisterRouter = require('./routes/course/courseRegister')
 const app = express();
 
 app.use(express.json());
@@ -55,9 +56,11 @@ mongoose
 
 // routes
 app.use("/api/courses", courseRouter);
+app.use("/api/courses/register",CourseRegisterRouter)
 app.use(router);
 app.use(Indrouter);
 app.use(Knorouter);
+app.use("/api/testimonials",TestimonialRouter);
 
 // listen port
 app.listen(process.env.PORT || 8000, () => {

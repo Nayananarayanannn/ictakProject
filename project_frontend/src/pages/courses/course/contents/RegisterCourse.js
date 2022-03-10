@@ -1,17 +1,55 @@
-import React, { useEffect } from 'react';
-import { Link, useLocation, useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import Aos from "aos";
+import axios from 'axios';
 
 function RegisterCourse(props) {
+  // get particular course details
+  const location = useLocation();
+  const course = location.state.course;
+
+  const navigate= useNavigate();
+
+  const [register,setRegister] = useState({name:"",email:"",course:course.name})
 
     useEffect(() => {
         Aos.init({});
       }, []);
 
-    // get particular course details
-    const location = useLocation();
-    const course = location.state.course;
+    // manage form change
+    const handleChange=(event)=>{
+      const { name, value } = event.target;
+    setRegister({ ...register, [name]: value });
+    }
 
+    // manage form submit
+    const handleSubmit=(event)=>{
+      event.preventDefault();
+      var data = JSON.stringify({
+        "name": register.name,
+        "email": register.email,
+        "course": register.course
+      });
+      
+      var config = {
+        method: 'post',
+        url: 'http://localhost:8000/api/courses/register/add',
+        headers: { 
+          'Content-Type': 'application/json'
+        },
+        data : data
+      };
+      
+      axios(config)
+      .then(function (response) {
+        alert("Registered Successfully.We will contact you soon...");
+        navigate(`/courses`)
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+
+    }
     return (
         <div className='registerCourse'>
             <div className="coursesList bg-gray-300">
@@ -21,7 +59,7 @@ function RegisterCourse(props) {
         className="courseListHead block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14 bg-[#FFFFFFA8] backdrop-blur-sm"
       >
       <h1>Register for {course.name}</h1>
-        <form className='text-left'>
+        <form onSubmit={handleSubmit} className='text-left'>
                     <div className="relative w-full mb-3 mt-8">
                     
                     <label
@@ -31,6 +69,8 @@ function RegisterCourse(props) {
                       Full Name
                     </label>
                     <input
+                    name="name"
+                    onChange={handleChange}
                       type="text"
                       className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                       placeholder="Full Name"
@@ -47,6 +87,8 @@ function RegisterCourse(props) {
                       Email
                     </label>
                     <input
+                    name="email"
+                    onChange={handleChange}
                       type="email"
                       className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                       placeholder="Email"

@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import CourseRegister from "./courseRegister/CourseRegister";
 import CourseAdd from "./courses/CourseAdd";
 import CourseDash from "./courses/CourseDash";
 import CourseEdit from "./courses/CourseEdit";
@@ -14,6 +15,8 @@ import Addteam from "./team/Addteam";
 import Details from "./team/Details";
 import EditTeam from "./team/Edit";
 import Team from "./team/Team";
+import Testimonial from "./testimonial/Testimonial";
+import TestimonialAdd from "./testimonial/TestimonialsAdd";
 
 const Admin = () => {
   return (
@@ -66,7 +69,7 @@ const Admin = () => {
                   </a>
                   <a
                     class="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
-                    href="/Test"
+                    href="/admin/Test"
                   >
                     <span class="text-left">
                       <svg
@@ -84,7 +87,7 @@ const Admin = () => {
                   </a>
                   <a
                     class="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
-                    href="#"
+                    href="/admin/course-register"
                   >
                     <span class="text-left">
                       <svg
@@ -404,6 +407,9 @@ const Admin = () => {
             <Route path="/team/Addteam" element={<Addteam/>}/>
             <Route path="/team/view/:id" element={<Details/>}/>
             <Route path="/team/edit/:id" element={<EditTeam/>}/>
+            <Route path="/Test" element={<Testimonial/>}/>
+            <Route path="/Test/add-test" element={<TestimonialAdd/>}/>
+            <Route path="/course-register" element={<CourseRegister/>}/>
             </Routes>
           </div>{" "}
         </div>

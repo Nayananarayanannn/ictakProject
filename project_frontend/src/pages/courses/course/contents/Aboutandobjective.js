@@ -43,15 +43,9 @@ function Aboutandobjective({ course }) {
               <span className="cardHeader_account">OBJECTIVES</span>
             </header>
             <div className="cardBody">
-              <ul type="circle" className="cardText">
-                {obj?.map((el) => {
-                  return (
-                    <>
-                      <li style={{ listStyle: "outside" }}>{el}</li>
-                    </>
-                  );
-                })}
-              </ul>
+            <div dangerouslySetInnerHTML={{ __html: `${course.objectives}` }}>
+  
+  </div>
             </div>
           </div>
         </div>

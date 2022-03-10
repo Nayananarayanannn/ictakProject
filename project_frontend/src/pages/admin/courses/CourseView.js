@@ -58,31 +58,11 @@ export default function CourseView() {
                           <li><b>Title :</b> {course.title}</li>
                           <li><b>Quote :</b> {course.quote}</li>
                           <li><b>Short description :</b> {course.shortDescription}</li>
-                          <li><b>Objectives: </b>{course.objectives?.map((obj)=>(
-                            <ul style={{listStyle:"outside"}}>
-                              <li>{obj}</li>
-                            </ul>
-                          ))}</li>
-                          <li><b>Highlights: </b>{course.highlights?.map((hil)=>(
-                            <ul style={{listStyle:"outside"}}>
-                              <li>{hil}</li>
-                            </ul>
-                          ))}</li>
-                          <li><b>Important Dates: </b>{course.dates?.map((date)=>(
-                            <ul>
-                              <li>{date}</li>
-                            </ul>
-                          ))}</li>
-                          <li><b>Agenda: </b>{course.agenda?.map((agen)=>(
-                            <ul style={{listStyle:"outside"}}>
-                              <li>{agen}</li>
-                            </ul>
-                          ))}</li>
-                          <li><b>eligibility : </b>{course.eligibility?.map((elig)=>(
-                            <ul style={{listStyle:"outside"}}>
-                              <li>{elig}</li>
-                            </ul>
-                          ))}</li>
+                          <li><b>Objectives: </b><div dangerouslySetInnerHTML={{ __html: `${course.objectives}` }}/> </li>
+                          <li><b>Highlights: </b><div dangerouslySetInnerHTML={{ __html: `${course.highlights}` }}/> </li>
+                          <li><b>Important Dates: </b><div dangerouslySetInnerHTML={{ __html: `${course.dates}` }}/> </li>
+                          <li><b>Agenda: </b><div dangerouslySetInnerHTML={{ __html: `${course.agenda}` }}/> </li>
+                          <li><b>eligibility : </b><div dangerouslySetInnerHTML={{ __html: `${course.eligibility}` }}/> </li>
                           <li>fees: {course.fee}</li>
                           <li><b>Testimonials : </b>{course.testimonials?.map((test,index)=>(
                             
@@ -106,3 +86,6 @@ export default function CourseView() {
     );
   
 }
+
+
+

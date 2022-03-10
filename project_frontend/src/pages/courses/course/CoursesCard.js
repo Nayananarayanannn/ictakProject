@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function CoursesCard(props) {
+function CoursesCard({home}) {
     const [CourseLists, setCourseLists] = useState([]);
 
     const style = {
@@ -19,7 +19,7 @@ function CoursesCard(props) {
 
     axios(config)
       .then(function (response) {
-        console.log(JSON.stringify(response.data));
+        // console.log(JSON.stringify(response.data));
         setCourseLists(response.data);
       })
       .catch(function (error) {
@@ -29,6 +29,7 @@ function CoursesCard(props) {
     return (
         <div>
                   <div className=" grid lg:grid-cols-2 md:grid-cols-1 gap-2">
+      {/* {home? setCourseLists(CourseLists.slice(0,2)) : setCourseLists(CourseLists)} */}
         {CourseLists.map((course, index) => (
           <>
             <div
@@ -47,8 +48,8 @@ function CoursesCard(props) {
                 </div>
                 <div className="details">
                   <h1> {course.name} </h1>
-                  {/* apply button sctive or inactive based on registration status */}
-                  {console.log(course.status)}
+                  
+                  {/* apply button active or inactive based on registration status */}
                   {course.status === "open" ? (
                     <Link to={`/course/${course.url}/apply`} state={{ course }}>
                       <button type="button" className={style.open}>

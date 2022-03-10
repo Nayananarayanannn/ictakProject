@@ -69,20 +69,15 @@ function Parallax({ course, style }) {
             alt="Mr and Mrs"
           />
           <h1>Eligibility</h1>
-          {course.eligibility?.map((el) => {
-            return <h4>{el}</h4>;
-          })}
+          <div dangerouslySetInnerHTML={{ __html: `${course.eligibility}` }}></div>
           <div style={{ clear: "both" }}></div>
         </div>
         <div className="parallax trans3">
           <div className="txt left">Course Agenda</div>
           <div style={{ clear: "both" }}></div>
           <div className="txt left sub">
-            <ul>
-              {course.agenda?.map((el) => {
-                return <li>{el}</li>;
-              })}
-            </ul>
+            <div dangerouslySetInnerHTML={{ __html: `${course.agenda}` }}></div>
+            
           </div>
         </div>
       </div>
