@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       <Router>
-      {admin=='true'? <></> : <NavBar/>}
+      {admin =='true'? <></> : <NavBar/>}
         {/* Routings */}
         <Routes>
           <Route path="/" element={<HomePage />}/>
@@ -56,7 +56,7 @@ function App() {
           <Route path="/modal" element = {<Example/>}/>
           <Route path='/:error' element = {<NotFoundPage/>}/>
         </Routes>
-        {admin=='true'? <></> : <Footer/>}
+        {admin =='true'? <></> : <Footer/>}
     </Router>
     </>
   );
