@@ -31,14 +31,22 @@ export default function Landing() {
 
           <div className="container mx-auto px-4">
             <div className="items-center flex flex-wrap">
-              <div data-aos="zoom-in-right" data-aos-duration="1000" className="w-full md:w-4/12 ml-auto mr-auto px-4">
+              <div
+                data-aos="zoom-in-right"
+                data-aos-duration="1000"
+                className="w-full md:w-4/12 ml-auto mr-auto px-4"
+              >
                 <img
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
                   src="http://ictacademyofficial.herokuapp.com/assets/material/img/icthall.png"
                 />
               </div>
-              <div data-aos="zoom-in-left" data-aos-duration="1000" className="w-full md:w-5/12 ml-auto mr-auto px-4">
+              <div
+                data-aos="zoom-in-left"
+                data-aos-duration="1000"
+                className="w-full md:w-5/12 ml-auto mr-auto px-4"
+              >
                 <div className="md:pr-12">
                   <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
                     <i className="fas fa-rocket text-xl"></i>
@@ -47,16 +55,24 @@ export default function Landing() {
                     Every Moment is a Fresh Beginning !
                   </h3>
                   <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                    ICT Academy was officially inaugurated by Chief Minister of
-                    Kerala Mr. Oommen Chandy on 24 June 2014 at a function held
-                    in Thiruvananthapuram in the presence of Education Minister
-                    P.K. Abdu Rabb, Additional Chief Secretary V. Somasundaram,
-                    and Higher Education Principal Secretary K.M. Abraham.
+                    Our New Office Inaguration Stand Up for Every Move ! They
+                    say with a new workplace, comes new energy, new excitement &
+                    most of all, a greater responsibility. Indeed, that is true.
+                    We embarked on a new Journey by having an Inauguration
+                    Ceremony of our office newly located at Thejaswini,
+                    TechnoPark, Trivandrum.
                     <br />
                     <br />
-                    The Chief Minister also released the logo of the ICT Academy
-                    and Education Minister P.K. Abdu Rabb launched the academy’s
-                    website and learning management system called ‘Paatshala’.
+                    Our New Office Inaguration Stand Up for Every Move ! They
+                    say with a new workplace, comes new energy, new excitement &
+                    most of all, a greater responsibility. Indeed, that is true.
+                    We embarked on a new Journey by having an Inauguration
+                    Ceremony of our office newly located at Thejaswini,
+                    TechnoPark, Trivandrum. With more than 50 leaders in the
+                    Industry witnessed the Grand opening ceremony of our office.
+                    We thank you for all for the good wishes that you showered
+                    on us. Also, we are grateful to all who marked their
+                    presence at the Inauguration Ceremony !
                   </p>
                   {/* <ul className="list-none mt-6 text-black">
                     <li className="py-2">
@@ -109,7 +125,11 @@ export default function Landing() {
         <section className="pt-20 pb-48">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
-              <div data-aos="zoom-out" data-aos-duration="800" className="w-full lg:w-6/12 px-4">
+              <div
+                data-aos="zoom-out"
+                data-aos-duration="800"
+                className="w-full lg:w-6/12 px-4"
+              >
                 <h2 className="text-4xl font-semibold">
                   Here are our students
                 </h2>
@@ -120,7 +140,11 @@ export default function Landing() {
               </div>
             </div>
             <div className="flex flex-wrap justify-center">
-              <div data-aos="flip-left"  data-aos-duration="800"className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div
+                data-aos="flip-left"
+                data-aos-duration="800"
+                className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"
+              >
                 <div className="px-6">
                   <img
                     alt="..."
@@ -163,7 +187,12 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-              <div data-aos="flip-right" cl data-aos-duration="800"assName="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div
+                data-aos="flip-right"
+                cl
+                data-aos-duration="800"
+                assName="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"
+              >
                 <div className="px-6">
                   <img
                     alt="..."
@@ -206,7 +235,11 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-              <div data-aos="flip-left"  data-aos-duration="800"className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div
+                data-aos="flip-left"
+                data-aos-duration="800"
+                className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"
+              >
                 <div className="px-6">
                   <img
                     alt="..."
@@ -276,7 +309,11 @@ export default function Landing() {
 
           <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
             <div className="flex flex-wrap text-center justify-center">
-              <div data-aos="zoom-in-up" data-aos-duration="800" className="w-full lg:w-6/12 px-4">
+              <div
+                data-aos="zoom-in-up"
+                data-aos-duration="800"
+                className="w-full lg:w-6/12 px-4"
+              >
                 <h2 className="text-4xl font-semibold text-white">
                   INDUSTRY CONNECTS
                 </h2>
@@ -293,7 +330,11 @@ export default function Landing() {
               </div>
             </div>
             <div className="flex flex-wrap mt-12 justify-center">
-              <div data-aos="zoom-in-right" data-aos-duration="800" className="w-full lg:w-3/12 px-4 text-center">
+              <div
+                data-aos="zoom-in-right"
+                data-aos-duration="800"
+                className="w-full lg:w-3/12 px-4 text-center"
+              >
                 <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <i className="fas fa-medal text-xl"></i>
                 </div>
@@ -310,7 +351,11 @@ export default function Landing() {
                   filed of Engineering & Technology.
                 </p>
               </div>
-              <div data-aos="zoom-in-right"  data-aos-duration="800" className="w-full lg:w-3/12 px-4 text-center">
+              <div
+                data-aos="zoom-in-right"
+                data-aos-duration="800"
+                className="w-full lg:w-3/12 px-4 text-center"
+              >
                 <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <i className="fas fa-poll text-xl"></i>
                 </div>
@@ -328,7 +373,11 @@ export default function Landing() {
                   domains.
                 </p>
               </div>
-              <div data-aos="zoom-in-left" data-aos-duration="800" className="w-full lg:w-3/12 px-4 text-center">
+              <div
+                data-aos="zoom-in-left"
+                data-aos-duration="800"
+                className="w-full lg:w-3/12 px-4 text-center"
+              >
                 <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <i className="fas fa-lightbulb text-xl"></i>
                 </div>
@@ -346,7 +395,11 @@ export default function Landing() {
                   collaboration, communication and prototyping skills
                 </p>
               </div>
-              <div data-aos="zoom-in-left" data-aos-duration="800" className="w-full lg:w-3/12 px-4 text-center">
+              <div
+                data-aos="zoom-in-left"
+                data-aos-duration="800"
+                className="w-full lg:w-3/12 px-4 text-center"
+              >
                 <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <i className="fas fa-lightbulb text-xl"></i>
                 </div>
@@ -363,11 +416,18 @@ export default function Landing() {
             </div>
           </div>
         </section>
-        <section id="contact-us" className="relative block py-24 lg:pt-0 bg-[#151D3B]">
+        <section
+          id="contact-us"
+          className="relative block py-24 lg:pt-0 bg-[#151D3B]"
+        >
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
               <div className="w-full lg:w-6/12 px-4">
-                <div  data-aos="flip-up" data-aos-duration="800" className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300 mt-[4rem]">
+                <div
+                  data-aos="flip-up"
+                  data-aos-duration="800"
+                  className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300 mt-[4rem]"
+                >
                   <div className="flex-auto p-5 lg:p-10">
                     <h4 className="text-2xl font-semibold">
                       Want to work with us?
