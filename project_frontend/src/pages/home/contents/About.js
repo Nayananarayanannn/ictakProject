@@ -201,7 +201,7 @@ const About = () => {
                 Anyone who keeps learning stays young. The greatest thing in
                 life is to keep your mind young.” - Henry Ford
               </p>
-              <a href="/" className="font-bold text-gray-800 mt-8">
+              <a href="/courses" className="font-bold text-gray-800 mt-8">
                 Check out Our Courses
               </a>
             </div>

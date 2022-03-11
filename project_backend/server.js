@@ -7,7 +7,8 @@ const router = require("./routes/about/TeamRouter");
 const Knorouter = require("./routes/about/KnowledgeRouter");
 const TestimonialRouter = require ("./routes/testimonials/TestimonialRouter")
 const CourseRegisterRouter = require('./routes/course/courseRegister');
-const LoginRouter = require('./routes/login/LoginRouter')
+const LoginRouter = require('./routes/login/LoginRouter');
+const ContactRouter = require('./routes/contact/Contactus') 
 const app = express();
 
 app.use(express.json());
@@ -57,7 +58,8 @@ mongoose
 
 // routes
 app.use("/api/courses", courseRouter);
-app.use("/api/courses/register",CourseRegisterRouter)
+app.use("/api/courses/register",CourseRegisterRouter);
+app.use('/api/contact',ContactRouter)
 app.use(router);
 app.use(Indrouter);
 app.use(Knorouter);
