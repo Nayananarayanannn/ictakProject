@@ -71,9 +71,9 @@ function Knowledge() {
                             </NavLink>
                         </div>
                     </div>
-                    <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-hidden">
-                        <div className="inline-block min-w-full shadow rounded-lg overflow-hidden">
-                            <table className="min-w-full leading-normal overflow-hidden">
+                    <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-auto">
+                        <div className="inline-block min-w-full shadow rounded-lg overflow-auto" style={{maxHeight:"80vh"}}>
+                            <table className="min-w-full leading-normal overflow-auto">
                                 <thead>
                                     <tr>
                                         <th
@@ -153,15 +153,11 @@ function Knowledge() {
                                                                 />
                                                             </svg>
                                                         </button>
-
-
                                                     </td>
                                                 </tr>
-
                                             )
                                         })
                                     }
-
                                 </tbody>
                             </table>
                         </div>
