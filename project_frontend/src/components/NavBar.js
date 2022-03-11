@@ -2,7 +2,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <nav className="bg-[#111827] px-2 sm:px-4 py-2.5  fixed top-0 inset-x-0 z-50">
+    <nav className="bg-[#111827] px-2 sm:px-4 py-2.5  fixed top-0 inset-x-0 z-50 ">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <a href="/" className="flex items-center">
           <img
@@ -85,28 +85,65 @@ const NavBar = () => {
               </a>
             </li>
             <li>
-            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-100 border-b border-gray-100 hover:bg-gray-500 md:hover:bg-transparent md:border-0 md:hover:text-[#5297E0] md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Membership <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path></svg></button>
-           
-            <div id="dropdownNavbar" class="hidden z-10 w-44 text-base list-none bg-[#111827] rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownMembership"
+                class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-100 border-b border-gray-100 hover:bg-gray-500 md:hover:bg-transparent md:border-0 md:hover:text-[#5297E0] md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+              >
+                Membership{" "}
+                <svg
+                  class="ml-1 w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+
+              <div
+                id="dropdownMembership"
+                class="hidden z-10 w-44 text-base list-none bg-[#111827] rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
+              >
                 <ul class="py-1" aria-labelledby="dropdownLargeButton">
                   <li>
-                    <a href="/membership/academic" class="block py-2 px-4 text-sm text-gray-100 hover:bg-gray-500 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Academic</a>
+                    <a
+                      href="/membership/academic"
+                      class="block py-2 px-4 text-sm text-gray-100 hover:bg-gray-500 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
+                    >
+                      Academic
+                    </a>
                   </li>
                   <li>
-                    <a href="/membership/corporate" class="block py-2 px-4 text-sm text-gray-100 hover:bg-gray-500 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Corporate</a>
+                    <a
+                      href="/membership/corporate"
+                      class="block py-2 px-4 text-sm text-gray-100 hover:bg-gray-500 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
+                    >
+                      Corporate
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownEvents" class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-100 border-b border-gray-100 hover:bg-gray-500 md:hover:bg-transparent md:border-0 md:hover:text-[#5297E0] md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Events <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path></svg></button>
+           
+            <div id="dropdownEvents" class="hidden z-10 w-44 text-base list-none bg-[#111827] rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="/events/icset" class="block py-2 px-4 text-sm text-gray-100 hover:bg-gray-500 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">ICSET</a>
+                  </li>
+                  <li>
+                    <a href="/events/techathlon" class="block py-2 px-4 text-sm text-gray-100 hover:bg-gray-500 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Techathlon</a>
                   </li>
                 </ul>
                 
             </div>
         </li>
-            <li>
-              <a
-                href="/events"
-                className="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-500 md:hover:bg-transparent md:border-0 md:hover:text-[#5297E0] md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                Events
-              </a>
-            </li>
             <li>
               <a
                 href="https://retail.ictkerala.org"
@@ -137,10 +174,26 @@ const NavBar = () => {
             </li>
             <li>
               <a
+                href="/#contact-us"
+                className="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-500 md:hover:bg-transparent md:border-0 md:hover:text-[#5297E0] md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a
                 href="/login"
                 className="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-500 md:hover:bg-transparent md:border-0 md:hover:text-[#5297E0] md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Login
+              </a>
+            </li>
+            <li>
+              <a
+                href="/admin"
+                className="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-500 md:hover:bg-transparent md:border-0 md:hover:text-[#5297E0] md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                Admin
               </a>
             </li>
           </ul>

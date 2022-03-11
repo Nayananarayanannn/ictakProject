@@ -6,7 +6,7 @@ const Announcement = () => {
       <div class="py-12 animate-marquee whitespace-nowrap">
         <span class="mx-2 text-md">
           <a
-            href="/courses"
+            href="https://retail.ictkerala.org/registration/"
             target="_blank"
             rel="noreferrer"
           >
@@ -16,7 +16,7 @@ const Announcement = () => {
         </span>
         <span class="mx-2 text-md">
           <a
-            href="/courses"
+            href="https://retail.ictkerala.org/registration/"
             target="_blank"
             rel="noreferrer"
             className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
@@ -26,7 +26,7 @@ const Announcement = () => {
         </span>
         <span class="mx-2 text-md">
           <a
-            href="/courses"
+            href="https://retail.ictkerala.org/registration/"
             target="_blank"
             rel="noreferrer"
           >
@@ -36,7 +36,7 @@ const Announcement = () => {
         </span>
         <span class="mx-2 text-md">
           <a
-            href="/courses"
+            href="https://retail.ictkerala.org/registration/"
             target="_blank"
             rel="noreferrer"
             className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
@@ -46,7 +46,7 @@ const Announcement = () => {
         </span>
         <span class="mx-2 text-md">
           <a
-            href="/courses"
+            href="https://retail.ictkerala.org/registration/"
             target="_blank"
             rel="noreferrer"
           >
@@ -56,7 +56,7 @@ const Announcement = () => {
         </span>
         <span class="mx-2 text-md">
           <a
-            href="/courses"
+            href="https://retail.ictkerala.org/registration/"
             target="_blank"
             rel="noreferrer"
             className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
@@ -69,7 +69,7 @@ const Announcement = () => {
       <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
         <span class="mx-2 text-md">
           <a
-            href="/courses"
+            href="https://retail.ictkerala.org/registration/"
             target="_blank"
             rel="noreferrer"
           >
@@ -79,7 +79,7 @@ const Announcement = () => {
         </span>
         <span class="mx-2 text-md">
           <a
-            href="/courses"
+            href="https://retail.ictkerala.org/registration/"
             target="_blank"
             rel="noreferrer"
             className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
@@ -89,7 +89,7 @@ const Announcement = () => {
         </span>
         <span class="mx-2 text-md">
           <a
-            href="/courses"
+            href="https://retail.ictkerala.org/registration/"
             target="_blank"
             rel="noreferrer"
           >
@@ -99,7 +99,7 @@ const Announcement = () => {
         </span>
         <span class="mx-2 text-md">
           <a
-            href="/courses"
+            href="https://retail.ictkerala.org/registration/"
             target="_blank"
             rel="noreferrer"
             className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
@@ -109,7 +109,7 @@ const Announcement = () => {
         </span>
         <span class="mx-2 text-md">
           <a
-            href="/courses"
+            href="https://retail.ictkerala.org/registration/"
             target="_blank"
             rel="noreferrer"
           >
@@ -119,7 +119,8 @@ const Announcement = () => {
         </span>
         <span class="mx-2 text-md">
           <a
-            href="/courses"
+            href="https://retail.ictkerala.org/registration/"
+            target="_blank"
             rel="noreferrer"
             className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
           >

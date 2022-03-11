@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function CourseList({home}) {
+function CourseList({Aos}) {
     const [CourseLists, setCourseLists] = useState([]);
 
     const style = {
