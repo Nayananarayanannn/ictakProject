@@ -115,8 +115,8 @@ function Contactus(props) {
                   id="test-table-xls-button"
                   className="download-table-xls-button btn btn-success mb-3 px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600"
                   table="table-to-xls"
-                  filename="tablexls"
-                  sheet="tablexls"
+                  filename="Contact"
+                  sheet="Contact"
                   buttonText="Download as Excel"/>
         </div>
     );

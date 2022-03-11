@@ -22,6 +22,7 @@ import Example from "./pages/admin/courses/CourseView";
 import Event from "./pages/events/ICSET";
 import ICSET from "./pages/events/ICSET";
 import Techathlon from "./pages/events/Techathlon";
+import PartnershipRegister from "./pages/partnership/PartnershipRegister";
 
 
 
@@ -44,6 +45,7 @@ function App() {
           <Route path='/course/:id/apply' element = {<RegisterCourse/>}/>
           <Route path='/news' element = {<News/>}/>
           <Route path='/partnership' element = {<Partnership/>}/>
+          <Route path="/partnership/register" element = {<PartnershipRegister/>}/>
           <Route path='/membership/academic' element = {<Academic/>}/>
           <Route path='/membership/academic/members' element = {<Members/>}/>
           <Route path='/membership/corporate' element = {<Corporate/>}/>
