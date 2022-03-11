@@ -10,14 +10,14 @@ import Landing from './contents/Landing';
 const HomePage = () => {
   console.log(localStorage.getItem('admin'))
   return (
-    <>
+    <div className='overflow-hidden'>
     <Hero />
     <Announcement />
     <About />
     <Carousel />
     <Courses/>
     <Landing/>
-    </>
+    </div>
   )
 }
 
