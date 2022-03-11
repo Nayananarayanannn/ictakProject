@@ -31,7 +31,7 @@ const Admin = () => {
               <nav>
                 <div>
                   <a
-                    className="w-full font-thin uppercase text-blue-500 flex items-center p-2 mt-2 transition-colors duration-200 justify-start bg-gradient-to-r from-white to-blue-100 border-r-4 from-gray-700 to-gray-800 border-r-4 border-blue-500 "
+                    className="w-full font-thin uppercase text-gray-200 flex items-center p-2 mt-2 transition-colors duration-200 justify-start hover:bg-gradient-to-r from-gray-700 to-gray-800  "
                     href="/admin"
                   >
                     <span className="text-left">
@@ -54,7 +54,7 @@ const Admin = () => {
                     </span>
                   </a>
                   <a
-                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start focus:text-blue-500 hover:bg-gradient-to-r from-gray-700 to-gray-900"
                     href="/admin/coursedash"
                   >
                     <span className="text-left">
@@ -72,7 +72,7 @@ const Admin = () => {
                     <span className="mx-4 text-sm font-normal">Courses</span>
                   </a>
                   <a
-                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start focus:text-blue-500 hover:bg-gradient-to-r from-gray-700 to-gray-900"
                     href="/admin/Test"
                   >
                     <span className="text-left">
@@ -92,7 +92,7 @@ const Admin = () => {
                     </span>
                   </a>
                   <a
-                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start focus:text-blue-500 hover:bg-gradient-to-r from-gray-700 to-gray-900"
                     href="/admin/course-register"
                   >
                     <span className="text-left">
@@ -112,7 +112,7 @@ const Admin = () => {
                     </span>
                   </a>
                   <a
-                    class="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                    class="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start focus:text-blue-500 hover:bg-gradient-to-r from-gray-700 to-gray-900"
                     href="/admin/contact"
                   >
                     <span class="text-left">
@@ -130,7 +130,7 @@ const Admin = () => {
                     <span class="mx-4 text-sm font-normal">Contact</span>
                   </a>
                   <a
-                    class="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                    class="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start focus:text-blue-500 hover:bg-gradient-to-r from-gray-700 to-gray-900"
                     href="#"
                   >
                     <span className="text-left">
@@ -150,7 +150,7 @@ const Admin = () => {
                     </span>
                   </a>
                   <a
-                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start focus:text-blue-500 hover:bg-gradient-to-r from-gray-700 to-gray-900"
                     href="/admin/corporate"
                   >
                     <span className="text-left">
@@ -170,7 +170,7 @@ const Admin = () => {
                     </span>
                   </a>
                   <a
-                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start focus:text-blue-500 hover:bg-gradient-to-r from-gray-700 to-gray-900"
                     href="/admin/partnership"
                   >
                     <span className="text-left">
@@ -190,7 +190,7 @@ const Admin = () => {
                     </span>
                   </a>
                   <a
-                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start focus:text-blue-500 hover:bg-gradient-to-r from-gray-700 to-gray-900"
                     href="/admin/industrial"
                   >
                     <span className="text-left">
@@ -208,7 +208,7 @@ const Admin = () => {
                     <span className="mx-4 text-sm font-normal">Industrial</span>
                   </a>
                   <a
-                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start focus:text-blue-500 hover:bg-gradient-to-r from-gray-700 to-gray-900"
                     href="/admin/knowledge"
                   >
                     <span className="text-left">
@@ -226,7 +226,7 @@ const Admin = () => {
                     <span className="mx-4 text-sm font-normal">Knowledge</span>
                   </a>
                   <a
-                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start focus:text-blue-500 hover:bg-gradient-to-r from-gray-700 to-gray-900"
                     href="/admin/team"
                   >
                     <span className="text-left">
@@ -244,7 +244,7 @@ const Admin = () => {
                     <span className="mx-4 text-sm font-normal">Staffs</span>
                   </a>
                   <a
-                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                    className="w-full font-thin uppercase text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start focus:text-blue-500 hover:bg-gradient-to-r from-gray-700 to-gray-900"
                     href="#"
                   >
                     <span className="text-left">
