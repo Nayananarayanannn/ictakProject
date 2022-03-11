@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Aos from 'aos';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-function Register(props) {
+function PartnershipRegister(props) {
   const navigate= useNavigate();
 
   const[register,setRegister]= useState([]);
@@ -38,7 +38,7 @@ function Register(props) {
 
     var config = {
       method: "post",
-      url: "http://localhost:8000/api/corporate/add",
+      url: "http://localhost:8000/api/partnership/add",
       headers: {
         "Content-Type": "application/json",
       },
@@ -48,7 +48,7 @@ function Register(props) {
     axios(config)
       .then(function (response) {
         alert("Registered Successfully.We will contact you soon...");
-        navigate(`/membership/corporate`);
+        navigate(`/partnership`);
       })
       .catch(function (error) {
         console.log(error);
@@ -286,4 +286,4 @@ function Register(props) {
     );
 }
 
-export default Register;
+export default PartnershipRegister;

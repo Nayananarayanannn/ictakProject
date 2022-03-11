@@ -8,7 +8,10 @@ const Knorouter = require("./routes/about/KnowledgeRouter");
 const TestimonialRouter = require ("./routes/testimonials/TestimonialRouter")
 const CourseRegisterRouter = require('./routes/course/courseRegister');
 const LoginRouter = require('./routes/login/LoginRouter');
-const ContactRouter = require('./routes/contact/Contactus') 
+const ContactRouter = require('./routes/contact/Contactus') ;
+const PartnershipRouter = require('./routes/partnership/partnershipRouter');
+const CorporateRouter = require('./routes/corporate/CorporateRouter');
+
 const app = express();
 
 app.use(express.json());
@@ -59,7 +62,9 @@ mongoose
 // routes
 app.use("/api/courses", courseRouter);
 app.use("/api/courses/register",CourseRegisterRouter);
-app.use('/api/contact',ContactRouter)
+app.use('/api/contact',ContactRouter);
+app.use('/api/partnership',PartnershipRouter);
+app.use('/api/corporate',CorporateRouter)
 app.use(router);
 app.use(Indrouter);
 app.use(Knorouter);
