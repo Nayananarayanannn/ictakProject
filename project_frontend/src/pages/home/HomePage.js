@@ -8,6 +8,7 @@ import Aos from "aos";
 import Landing from './contents/Landing';
 
 const HomePage = () => {
+  localStorage.setItem('admin',false)
   console.log(localStorage.getItem('admin'))
   return (
     <div className='overflow-hidden'>

@@ -1,9 +1,13 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Aos from 'aos';
 
 function ContactUs(props) {
-  const navigate = useNavigate();
+
+  useEffect(() => {
+    Aos.init({});
+  }, []);
 
   const [contact, setContact] = useState({
     name: "",
@@ -54,7 +58,8 @@ function ContactUs(props) {
       <section className="relative block py-24 lg:pt-0 bg-[#151D3B]">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-            <div className="w-full lg:w-6/12 px-4">
+            <div data-aos="flip-up"
+                  data-aos-duration="800" className="w-full lg:w-6/12 px-4">
               <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300 mt-[4rem]">
                 <div className="flex-auto p-5 lg:p-10">
                   <h4 className="text-2xl font-semibold">Talk to Us?</h4>

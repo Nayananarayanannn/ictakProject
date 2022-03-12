@@ -14,7 +14,7 @@ function Brochure({ course }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     mailBrochure();
-    alert(`${course.url}`);
+    alert(`Brochure has been sent to mail id ${course.mail}`);
     setFormValue({name:"",phone:"",mail:"",degree:""})
     
   };
