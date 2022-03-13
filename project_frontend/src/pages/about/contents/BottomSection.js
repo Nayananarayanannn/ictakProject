@@ -20,7 +20,7 @@ function BottomSection() {
 
   const getIndudata = async (e) => {
 
-    const res1 = await fetch("http://localhost:8000/getIndudata", {
+    const res1 = await fetch("/getIndudata", {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
@@ -43,7 +43,7 @@ function BottomSection() {
 
   const getKnowdata = async (e) => {
 
-    const res2 = await fetch("http://localhost:8000/getKnowdata", {
+    const res2 = await fetch("/getKnowdata", {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
@@ -66,7 +66,7 @@ function BottomSection() {
 
   const getdata = async (e) => {
 
-    const res = await fetch("http://localhost:8000/getdata", {
+    const res = await fetch("/getdata", {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
@@ -119,17 +119,17 @@ function BottomSection() {
           <div className="hidden md:block h-44 md:h-60  xl:h-92">
             <img
               className="hidden h-full xl:block "
-              src="https://st4.depositphotos.com/11337508/27781/v/450/depositphotos_277816546-stock-illustration-business-vision-business-team-searching.jpg"
+              alt='' src="https://st4.depositphotos.com/11337508/27781/v/450/depositphotos_277816546-stock-illustration-business-vision-business-team-searching.jpg"
             />
             <img
               className="xl:hidden h-full "
-              src="https://st4.depositphotos.com/11337508/27781/v/450/depositphotos_277816546-stock-illustration-business-vision-business-team-searching.jpg"
+              alt='' src="https://st4.depositphotos.com/11337508/27781/v/450/depositphotos_277816546-stock-illustration-business-vision-business-team-searching.jpg"
             />
           </div>
         </div>
         <div className="md:hidden  mt-6">
           <img
-            src="https://st4.depositphotos.com/11337508/27781/v/450/depositphotos_277816546-stock-illustration-business-vision-business-team-searching.jpg"
+            alt='' src="https://st4.depositphotos.com/11337508/27781/v/450/depositphotos_277816546-stock-illustration-business-vision-business-team-searching.jpg"
             className="w-full"
           />
         </div>
@@ -206,7 +206,7 @@ function BottomSection() {
             <div className="relative lg:w-1/4 sm:w-96 h-[66vh] md:h-70 xl:h-92 ">
               <img
                 src="https://media-exp1.licdn.com/dms/image/C5603AQEgfYgb48xFMQ/profile-displayphoto-shrink_200_200/0/1620233227538?e=1651104000&v=beta&t=G-kdwZhwyGrDvBu-dsczTOQMm-MOl737DxpCoN1QlZM"
-                alt="image of profile"
+                alt="profile"
                 className="w-full shadow-2xl h-full flex-shrink-0 object-fit object-cover shadow-lg rounded "
               />
               <div className="w-32 md:flex hidden shadow-2xl items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-32 bg-indigo-100 rounded-full hover:bg-cyan-500">
@@ -251,7 +251,7 @@ function BottomSection() {
             <div className="relative lg:w-1/4 sm:w-96 xl:h-92 h-[8vh]0">
               <img
                 src="https://i0.wp.com/ictkerala.org/wp-content/uploads/2019/01/Mr.-Santhosh.jpg?resize=768%2C924&ssl=1"
-                alt="image of profile"
+                alt="profile"
                 className="w-full shadow-2xl h-full flex-shrink-0 object-fit object-cover shadow-lg rounded "
               />
               <div className="w-32 shadow-2xl md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-32 bg-indigo-100 hover:bg-cyan-500 rounded-full">
@@ -292,14 +292,26 @@ function BottomSection() {
       </div>
 
       {/* team starts here */}
-      <div className="p-8 w-full bg-gray-100 border-2 shadow-xl box-border rounded-xl shadow-8xl mx-auto ">
-        <p className="text-center text-xl font-bold text-cyan-600">
-          Professional team
-        </p>
-        <p className="text-center mb-12 text-md font-normal text-gray-900">
-          Meet the best team in world
-        </p>
 
+      <div class="max-w-screen-xl px-4 mx-auto md:px-8">
+        <div class="mb-10 md:mb-16">
+          <h2
+            class="
+        mb-4
+        text-2xl
+        font-bold
+        text-center text-gray-800
+        lg:text-3xl
+        md:mb-6
+      "
+          >
+            Our Team Section
+          </h2>
+
+          <p class="max-w-screen-md mx-auto text-center text-gray-500 md:text-lg">
+            Meet the best team in world
+          </p>
+        </div>
         <Slider
           dots={true}
           slidesToShow={4}
@@ -311,93 +323,72 @@ function BottomSection() {
             getuserdata.map((element) => {
               return (
 
-                <div className="p-2  h-50 ">
-                  <div className="border-2 bg-blue-100 shadow-2xl border-white box-border w-3/4 h-[66vh] p-8 relative hover:scale-110">
-                    <div className="text-center opacity-90">
-                      <a href="#" className="block relative ">
-                        <img
-                          alt="profil"
-                          src={element.profileimg}
-                          className="mx-auto object-cover rounded-lg shadow-lg h-40 w-30"
-                        />
-                      </a>
+                <div class="grid gap-4 md:grid-cols-3">
+                  <div class="p-4 shadow">
+                    <div class="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80">
+                      <img
+                        src={element.profileimg}
+                        alt="Image"
+                        class="object-cover object-center w-full h-full"
+                      />
                     </div>
-                    <div className="text-center">
-                      <p className="text-md text-cyan-600">
-                        {element.name}
-                      </p>
-                      <p className="text-sm text-black font-light">
+
+                    <div class="flex flex-col items-center justify-center">
+                      <div class="font-bold text-indigo-500 md:text-lg">{element.name}</div>
+                      <p class="mb-3 text-sm text-gray-500 md:text-base md:mb-4">
                         {element.designation}
                       </p>
-                    </div>
-                    <div className="w-full flex justify-center pt-5 pb-5 ">
-                      <a href="#" className="mx-5">
-                        <div>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={24}
-                            height={24}
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="#718096"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="feather feather-github "
-                          >
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                          </svg>
+
+                      <div class="flex">
+                        <div class="flex gap-4">
+                          <a href="#">
+                            <svg
+                              class="w-6 h-6 text-blue-600 fill-current"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                              />
+                            </svg>
+                          </a>
+                          <a href="#">
+                            <svg
+                              class="w-6 h-6 text-blue-300 fill-current"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                              />
+                            </svg>
+                          </a>
+                          <a href="#">
+                            <svg
+                              class="w-6 h-6 text-blue-500 fill-current"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 448 512"
+                            >
+                              <path
+                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                              ></path>
+                            </svg>
+                          </a>
                         </div>
-                      </a>
-                      <a href="#" className="mx-5">
-                        <div>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={24}
-                            height={24}
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="#718096"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="feather feather-twitter"
-                          >
-                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                          </svg>
-                        </div>
-                      </a>
-                      <a href="#" className="mx-5">
-                        <div>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={24}
-                            height={24}
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="#718096"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="feather feather-instagram "
-                          >
-                            <rect x={2} y={2} width={20} height={20} rx={5} ry={5} />
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                          </svg>
-                        </div>
-                      </a>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-
 
               )
             }
             )}
         </Slider>
       </div>
+
+
+
+
 
 
 
